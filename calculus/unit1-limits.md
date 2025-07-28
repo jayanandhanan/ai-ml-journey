@@ -137,15 +137,6 @@ then there exists `c ∈ [a, b]` such that:
 
 ---
 
-## 🧠 Visual Summary
-
-- **Limits from a graph**: Observe behavior as `x → a⁻` and `x → a⁺`  
-- **Continuity**: No jumps, breaks, or holes  
-- **Discontinuity types**: Visual cues help identify them quickly  
-- **Asymptotes**: Look for division by 0 or end behavior
-
----
-
 ## ✅ Completed Topics from Khan Academy
 
 - [x] Estimating limits  
