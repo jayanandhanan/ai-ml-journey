@@ -1,157 +1,179 @@
 # 📘 Calculus 1 – Unit 2: Derivatives – Definition and Basic Rules
 
-*This file documents concepts and strategies I learned from Khan Academy's Unit 2 of Calculus 1: Derivatives.*
+*This file documents concepts and strategies I learned from Khan Academy's Unit 2 of Calculus 1: Derivatives – Definition and Basic Rules.*
 
-🔗 Source: [Khan Academy – Derivatives](https://www.khanacademy.org/math/calculus-1/cs1-derivatives-intro)
+🔗 Source: [Khan Academy – Derivatives – Definition and Basic Rules](https://www.khanacademy.org/math/calculus-1/cs1-derivatives-definition-and-basic-rules)
 
 ---
 
 ## 📌 What is a Derivative?
 
-A **derivative** represents the **instantaneous rate of change** of a function at a specific point. It tells how fast a function's output changes relative to its input.
+A **derivative** represents the **instantaneous rate of change** of a function at a specific point. It provides the slope of the tangent line to the function's graph at that point.
 
-### 🔹 Instantaneous Slope vs Average Slope
+**Mathematical Definition:**
 
-* **Instantaneous slope:** slope of the **tangent line** at a single point.
-* **Average slope:** slope of a **secant line** over an interval `[a, b]`.
+The derivative of a function $f(x)$ at a point $x = a$ is defined as:
 
-### 🔹 Secant Line and Slope Formula
+$$
+f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
+$$
 
-The slope of a secant line through points `(x1, f(x1))` and `(x2, f(x2))` is:
-
-```
-m = (f(x2) - f(x1)) / (x2 - x1)
-```
-
-This slope gives the **average rate of change** over `[x1, x2]`. As `x2 → x1`, it approaches the derivative.
+This is known as the **difference quotient**.
 
 ---
 
-## 📐 Tangent Line and Point-Slope Form
+## 🔍 Average vs. Instantaneous Rate of Change
 
-The tangent line at `(a, f(a))` has slope `f'(a)` and equation:
+* **Average Rate of Change**: Measures the change in the function's value over an interval $[a, b]$:
 
-```
+  $$
+  \frac{f(b) - f(a)}{b - a}
+  $$
+
+* **Instantaneous Rate of Change**: Represents the rate at which the function's value changes at a specific point, equivalent to the slope of the tangent line at that point.
+
+---
+
+## 📏 Secant Line and Slope
+
+* **Secant Line**: A line that intersects a curve at two points. Its slope represents the average rate of change between those two points.
+
+* **Tangent Line**: A line that touches the curve at exactly one point. Its slope represents the instantaneous rate of change at that point.
+
+---
+
+## 🧮 Derivative Notations
+
+Different notations are used to represent derivatives:
+
+* **Lagrange Notation**: $f'(x)$
+* **Leibniz Notation**: $\frac{dy}{dx}$
+* **Newton Notation**: $\dot{y}$
+
+---
+
+## 📐 Tangent Line Equation
+
+The equation of a tangent line at a point $(a, f(a))$ is given by:
+
+$$
 y - f(a) = f'(a)(x - a)
-```
+$$
 
-* **Tangent line:** touches curve at one point, slope equals derivative.
-* **Secant line:** intersects curve at two points, slope equals average rate of change.
-
----
-
-## 🔢 Derivative Notations
-
-* **Lagrange:** `f'(x)`
-* **Leibniz:** `dy/dx`
-* **Newton:** `ȳ` (used in physics)
+This is the **point-slope form** of the line.
 
 ---
 
-## 🔁 Formal Definition of Derivative
+## 📈 Derivative as Slope of Curve
 
-```
-f'(a) = lim(h → 0) [(f(a + h) - f(a)) / h]
-```
-
-This limit gives the **instantaneous rate of change** at `x = a`.
+The derivative at a point gives the slope of the tangent line to the curve at that point, indicating how steep the curve is at that specific location.
 
 ---
 
-## 🧮 Basic Derivative Rules
+## 🔄 Average Rate of Change Formula
 
-* **Constant Rule:** `d/dx[c] = 0`
-* **Power Rule:** `d/dx[x^n] = n*x^(n-1)`
-* **Constant Multiple Rule:** `d/dx[c*f(x)] = c*f'(x)`
-* **Sum/Difference Rule:** `d/dx[f(x) ± g(x)] = f'(x) ± g'(x)`
+The average rate of change of a function $f(x)$ over the interval $[a, b]$ is:
 
----
-
-## 🧩 Derivatives of Common Functions
-
-| Function | Derivative      |
-| -------- | --------------- |
-| sin(x)   | cos(x)          |
-| cos(x)   | -sin(x)         |
-| tan(x)   | sec^2(x)        |
-| cot(x)   | -csc^2(x)       |
-| sec(x)   | sec(x)\*tan(x)  |
-| csc(x)   | -csc(x)\*cot(x) |
-| ln(x)    | 1/x             |
+$$
+\frac{f(b) - f(a)}{b - a}
+$$
 
 ---
 
-## ✖️ Product Rule
+## 📘 Power Rule and Basic Derivative Rules
 
-```
-d/dx[u*v] = u'*v + u*v'
-```
+* **Power Rule**: For $f(x) = x^n$, the derivative is:
 
-## ➗ Quotient Rule
+  $$
+  $$
 
-```
-d/dx[u/v] = (v*u' - u*v') / v^2
-```
+f'(x) = nx^{n-1}
+]
 
-## 🔁 Chain Rule
-
-```
-d/dx[f(g(x))] = f'(g(x)) * g'(x)
-```
+* **Constant Rule**: The derivative of a constant is 0.
+* **Constant Multiple Rule**: The derivative of $c \cdot f(x)$ is $c \cdot f'(x)$.
+* **Sum/Difference Rule**: The derivative of $f(x) + g(x)$ is $f'(x) + g'(x)$, and similarly for subtraction.
 
 ---
 
-## 📐 Normal Line
+## 📊 Differentiating Polynomials
 
-Perpendicular to tangent. If tangent slope is `m`, normal slope is `-1/m`.
+To differentiate a polynomial:
 
----
+1. Apply the power rule to each term.
+2. Combine the results.
 
-## ✅ Differentiability and Continuity
+**Example**:
 
-* Differentiable ⇒ Continuous
-* Continuous ⇏ Differentiable (may have corners/cusps)
+For $f(x) = 3x^3 + 2x^2 - x + 5$,
 
----
+$$
+f'(x) = 9x^2 + 4x - 1
+$$
 
-## 🧪 Example: Polynomial Derivative
-
-```
-f(x) = 3x^3 - 5x^2 + 2x - 7
-f'(x) = 9x^2 - 10x + 2
-```
-
-Slope of tangent line at any x-value is `f'(x)`.
+Slope of tangent line at any x-value is $f'(x)$.
 
 ---
 
-## 📈 Visual Summary
+## 🔢 Derivatives of Trigonometric Functions
 
-* **Secant Line:** average rate of change.
-* **Tangent Line:** instantaneous rate of change.
-* **Derivative:** slope of tangent line.
+* $\frac{d}{dx}(\sin x) = \cos x$
+* $\frac{d}{dx}(\cos x) = -\sin x$
+* $\frac{d}{dx}(\tan x) = \sec^2 x$
+* $\frac{d}{dx}(\cot x) = -\csc^2 x$
+* $\frac{d}{dx}(\sec x) = \sec x \tan x$
+* $\frac{d}{dx}(\csc x) = -\csc x \cot x$
+
+---
+
+## 📈 Product and Quotient Rules
+
+* **Product Rule**: For $f(x) = u(x) \cdot v(x)$,
+
+  $$
+  $$
+
+f'(x) = u'(x)v(x) + u(x)v'(x)
+]
+
+* **Quotient Rule**: For $f(x) = \frac{u(x)}{v(x)}$,
+
+  $$
+  $$
+
+f'(x) = \frac{v(x)u'(x) - u(x)v'(x)}{(v(x))^2}
+]
+
+---
+
+## 📐 Slope of Normal Line
+
+The slope of the **normal line** to a curve at a point is the negative reciprocal of the slope of the tangent line at that point:
+
+$$
+m_{\text{normal}} = -\frac{1}{m_{\text{tangent}}}
+$$
 
 ---
 
 ## ✅ Completed Topics from Khan Academy
 
+* [x] Average and instantaneous rate of change
 * [x] Secant and tangent lines
-* [x] Average vs instantaneous rate of change
-* [x] Slope formulas
-* [x] Derivative definitions and notations
-* [x] Formal limit definition
-* [x] Basic derivative rules
-* [x] Product, quotient, chain rules
-* [x] Differentiability and continuity
-* [x] Polynomial derivatives
-* [x] Trig and logarithmic derivatives
-* [x] Tangent and normal lines
+* [x] Derivative notations
+* [x] Tangent line equation
+* [x] Derivative as slope of curve
+* [x] Power and basic derivative rules
+* [x] Differentiating polynomials
+* [x] Derivatives of trigonometric functions
+* [x] Product and quotient rules
+* [x] Slope of normal line
 
 ---
 
 ## 📚 Reference
 
-Khan Academy: [Unit 2 – Derivatives](https://www.khanacademy.org/math/calculus-1/cs1-derivatives-intro)
+Khan Academy: [Unit 2 – Derivatives – Definition and Basic Rules](https://www.khanacademy.org/math/calculus-1/cs1-derivatives-definition-and-basic-rules)
 
 ---
 
