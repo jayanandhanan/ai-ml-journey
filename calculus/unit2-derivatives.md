@@ -12,11 +12,9 @@ A **derivative** represents the **instantaneous rate of change** of a function a
 
 **Mathematical Definition:**
 
-The derivative of a function $f(x)$ at a point $x = a$ is defined as:
+The derivative of a function f(x) at a point x = a is defined as:
 
-$$
-f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
-$$
+f'(a) = lim(h → 0) \[(f(a+h) - f(a)) / h]
 
 This is known as the **difference quotient**.
 
@@ -24,11 +22,9 @@ This is known as the **difference quotient**.
 
 ## 🔍 Average vs. Instantaneous Rate of Change
 
-* **Average Rate of Change**: Measures the change in the function's value over an interval $[a, b]$:
+* **Average Rate of Change**: Measures the change in the function's value over an interval \[a, b]:
 
-  $$
-  \frac{f(b) - f(a)}{b - a}
-  $$
+(f(b) - f(a)) / (b - a)
 
 * **Instantaneous Rate of Change**: Represents the rate at which the function's value changes at a specific point, equivalent to the slope of the tangent line at that point.
 
@@ -46,19 +42,17 @@ This is known as the **difference quotient**.
 
 Different notations are used to represent derivatives:
 
-* **Lagrange Notation**: $f'(x)$
-* **Leibniz Notation**: $\frac{dy}{dx}$
-* **Newton Notation**: $\dot{y}$
+* **Lagrange Notation**: f'(x)
+* **Leibniz Notation**: dy/dx
+* **Newton Notation**: ẏ
 
 ---
 
 ## 📐 Tangent Line Equation
 
-The equation of a tangent line at a point $(a, f(a))$ is given by:
+The equation of a tangent line at a point (a, f(a)) is given by:
 
-$$
-y - f(a) = f'(a)(x - a)
-$$
+y - f(a) = f'(a) \* (x - a)
 
 This is the **point-slope form** of the line.
 
@@ -72,27 +66,21 @@ The derivative at a point gives the slope of the tangent line to the curve at th
 
 ## 🔄 Average Rate of Change Formula
 
-The average rate of change of a function $f(x)$ over the interval $[a, b]$ is:
+The average rate of change of a function f(x) over the interval \[a, b] is:
 
-$$
-\frac{f(b) - f(a)}{b - a}
-$$
+(f(b) - f(a)) / (b - a)
 
 ---
 
 ## 📘 Power Rule and Basic Derivative Rules
 
-* **Power Rule**: For $f(x) = x^n$, the derivative is:
+* **Power Rule**: For f(x) = x^n, the derivative is:
 
-  $$
-  $$
-
-f'(x) = nx^{n-1}
-]
+f'(x) = n \* x^(n-1)
 
 * **Constant Rule**: The derivative of a constant is 0.
-* **Constant Multiple Rule**: The derivative of $c \cdot f(x)$ is $c \cdot f'(x)$.
-* **Sum/Difference Rule**: The derivative of $f(x) + g(x)$ is $f'(x) + g'(x)$, and similarly for subtraction.
+* **Constant Multiple Rule**: The derivative of c \* f(x) is c \* f'(x).
+* **Sum/Difference Rule**: The derivative of f(x) + g(x) is f'(x) + g'(x), and similarly for subtraction.
 
 ---
 
@@ -105,44 +93,34 @@ To differentiate a polynomial:
 
 **Example**:
 
-For $f(x) = 3x^3 + 2x^2 - x + 5$,
+For f(x) = 3x^3 + 2x^2 - x + 5,
 
-$$
 f'(x) = 9x^2 + 4x - 1
-$$
 
-Slope of tangent line at any x-value is $f'(x)$.
+Slope of tangent line at any x-value is f'(x).
 
 ---
 
 ## 🔢 Derivatives of Trigonometric Functions
 
-* $\frac{d}{dx}(\sin x) = \cos x$
-* $\frac{d}{dx}(\cos x) = -\sin x$
-* $\frac{d}{dx}(\tan x) = \sec^2 x$
-* $\frac{d}{dx}(\cot x) = -\csc^2 x$
-* $\frac{d}{dx}(\sec x) = \sec x \tan x$
-* $\frac{d}{dx}(\csc x) = -\csc x \cot x$
+* d/dx(sin x) = cos x
+* d/dx(cos x) = -sin x
+* d/dx(tan x) = sec^2 x
+* d/dx(cot x) = -csc^2 x
+* d/dx(sec x) = sec x \* tan x
+* d/dx(csc x) = -csc x \* cot x
 
 ---
 
 ## 📈 Product and Quotient Rules
 
-* **Product Rule**: For $f(x) = u(x) \cdot v(x)$,
+* **Product Rule**: For f(x) = u(x) \* v(x),
 
-  $$
-  $$
+f'(x) = u'(x) \* v(x) + u(x) \* v'(x)
 
-f'(x) = u'(x)v(x) + u(x)v'(x)
-]
+* **Quotient Rule**: For f(x) = u(x)/v(x),
 
-* **Quotient Rule**: For $f(x) = \frac{u(x)}{v(x)}$,
-
-  $$
-  $$
-
-f'(x) = \frac{v(x)u'(x) - u(x)v'(x)}{(v(x))^2}
-]
+f'(x) = (v(x) \* u'(x) - u(x) \* v'(x)) / (v(x))^2
 
 ---
 
@@ -150,9 +128,7 @@ f'(x) = \frac{v(x)u'(x) - u(x)v'(x)}{(v(x))^2}
 
 The slope of the **normal line** to a curve at a point is the negative reciprocal of the slope of the tangent line at that point:
 
-$$
-m_{\text{normal}} = -\frac{1}{m_{\text{tangent}}}
-$$
+m\_normal = -1 / m\_tangent
 
 ---
 
