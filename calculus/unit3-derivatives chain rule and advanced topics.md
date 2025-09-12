@@ -2,6 +2,8 @@
 
 *This file documents concepts and strategies I learned from Khan Academy's Unit 3 of Calculus 1: Chain Rule and Other Advanced Topics.*
 
+🔗 Source: Khan Academy: [Unit 3 – Chain Rule and Other Advanced Topics](https://www.khanacademy.org/math/calculus-1/cs1-derivatives-chain-rule-and-other-advanced-topics)
+
 ---
 
 ## 📌 Chain Rule
@@ -215,3 +217,4 @@ Khan Academy: [Unit 3 – Chain Rule and Other Advanced Topics](https://www.khan
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI model building.
+
