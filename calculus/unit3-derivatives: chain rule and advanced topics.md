@@ -210,11 +210,6 @@ $$
 
 ---
 
-## 📚 Reference
-
-Khan Academy: [Unit 3 – Chain Rule and Other Advanced Topics](https://www.khanacademy.org/math/calculus-1/cs1-derivatives-chain-rule-and-other-advanced-topics)
-
----
-
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI model building.
+
 
