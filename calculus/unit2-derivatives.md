@@ -12,9 +12,9 @@ A **derivative** represents the **instantaneous rate of change** of a function a
 
 **Mathematical Definition:**
 
-The derivative of a function f(x) at a point x = a is defined as:
-
-f'(a) = lim(h → 0) \[(f(a+h) - f(a)) / h]
+$$
+f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
+$$
 
 This is known as the **difference quotient**.
 
@@ -22,9 +22,11 @@ This is known as the **difference quotient**.
 
 ## 🔍 Average vs. Instantaneous Rate of Change
 
-* **Average Rate of Change**: Measures the change in the function's value over an interval \[a, b]:
+* **Average Rate of Change**: Measures the change in the function's value over an interval $[a, b]$:
 
-(f(b) - f(a)) / (b - a)
+$$
+\frac{f(b) - f(a)}{b - a}
+$$
 
 * **Instantaneous Rate of Change**: Represents the rate at which the function's value changes at a specific point, equivalent to the slope of the tangent line at that point.
 
@@ -42,17 +44,19 @@ This is known as the **difference quotient**.
 
 Different notations are used to represent derivatives:
 
-* **Lagrange Notation**: f'(x)
-* **Leibniz Notation**: dy/dx
-* **Newton Notation**: ẏ
+* **Lagrange Notation:** $f'(x)$  
+* **Leibniz Notation:** $\frac{dy}{dx}$  
+* **Newton Notation:** $\dot{y}$
 
 ---
 
 ## 📐 Tangent Line Equation
 
-The equation of a tangent line at a point (a, f(a)) is given by:
+The equation of a tangent line at a point $(a, f(a))$ is given by:
 
-y - f(a) = f'(a) \* (x - a)
+$$
+y - f(a) = f'(a) \cdot (x - a)
+$$
 
 This is the **point-slope form** of the line.
 
@@ -66,21 +70,25 @@ The derivative at a point gives the slope of the tangent line to the curve at th
 
 ## 🔄 Average Rate of Change Formula
 
-The average rate of change of a function f(x) over the interval \[a, b] is:
+The average rate of change of a function $f(x)$ over the interval $[a, b]$ is:
 
-(f(b) - f(a)) / (b - a)
+$$
+\frac{f(b) - f(a)}{b - a}
+$$
 
 ---
 
 ## 📘 Power Rule and Basic Derivative Rules
 
-* **Power Rule**: For f(x) = x^n, the derivative is:
+* **Power Rule**: For $f(x) = x^n$, the derivative is:
 
-f'(x) = n \* x^(n-1)
+$$
+f'(x) = n \cdot x^{n-1}
+$$
 
-* **Constant Rule**: The derivative of a constant is 0.
-* **Constant Multiple Rule**: The derivative of c \* f(x) is c \* f'(x).
-* **Sum/Difference Rule**: The derivative of f(x) + g(x) is f'(x) + g'(x), and similarly for subtraction.
+* **Constant Rule**: The derivative of a constant is $0$  
+* **Constant Multiple Rule**: The derivative of $c \cdot f(x)$ is $c \cdot f'(x)$  
+* **Sum/Difference Rule**: The derivative of $f(x) + g(x)$ is $f'(x) + g'(x)$, and similarly for subtraction
 
 ---
 
@@ -88,47 +96,53 @@ f'(x) = n \* x^(n-1)
 
 To differentiate a polynomial:
 
-1. Apply the power rule to each term.
-2. Combine the results.
+1. Apply the power rule to each term  
+2. Combine the results
 
-**Example**:
+**Example:**
 
-For f(x) = 3x^3 + 2x^2 - x + 5,
+For $f(x) = 3x^3 + 2x^2 - x + 5$,
 
+$$
 f'(x) = 9x^2 + 4x - 1
+$$
 
-Slope of tangent line at any x-value is f'(x).
+Slope of tangent line at any $x$-value is $f'(x)$.
 
 ---
 
 ## 🔢 Derivatives of Trigonometric Functions
 
-* d/dx(sin x) = cos x
-* d/dx(cos x) = -sin x
-* d/dx(tan x) = sec^2 x
-* d/dx(cot x) = -csc^2 x
-* d/dx(sec x) = sec x \* tan x
-* d/dx(csc x) = -csc x \* cot x
+* $\frac{d}{dx}(\sin x) = \cos x$  
+* $\frac{d}{dx}(\cos x) = -\sin x$  
+* $\frac{d}{dx}(\tan x) = \sec^2 x$  
+* $\frac{d}{dx}(\cot x) = -\csc^2 x$  
+* $\frac{d}{dx}(\sec x) = \sec x \cdot \tan x$  
+* $\frac{d}{dx}(\csc x) = -\csc x \cdot \cot x$
 
 ---
 
 ## 🔢 Derivatives of Exponential and Logarithmic Functions
 
-* d/dx(e^x) = e^x
-* d/dx(a^x) = a^x \* ln(a)  (a > 0)
-* d/dx(ln x) = 1/x  (x > 0)
+* $\frac{d}{dx}(e^x) = e^x$  
+* $\frac{d}{dx}(a^x) = a^x \cdot \ln(a)$, $a > 0$  
+* $\frac{d}{dx}(\ln x) = \frac{1}{x}$, $x > 0$
 
 ---
 
 ## 📈 Product and Quotient Rules
 
-* **Product Rule**: For f(x) = u(x) \* v(x),
+* **Product Rule**: For $f(x) = u(x) \cdot v(x)$,
 
-f'(x) = u'(x) \* v(x) + u(x) \* v'(x)
+$$
+f'(x) = u'(x) \cdot v(x) + u(x) \cdot v'(x)
+$$
 
-* **Quotient Rule**: For f(x) = u(x)/v(x),
+* **Quotient Rule**: For $f(x) = \frac{u(x)}{v(x)}$,
 
-f'(x) = (v(x) \* u'(x) - u(x) \* v'(x)) / (v(x))^2
+$$
+f'(x) = \frac{v(x) \cdot u'(x) - u(x) \cdot v'(x)}{(v(x))^2}
+$$
 
 ---
 
@@ -136,22 +150,24 @@ f'(x) = (v(x) \* u'(x) - u(x) \* v'(x)) / (v(x))^2
 
 The slope of the **normal line** to a curve at a point is the negative reciprocal of the slope of the tangent line at that point:
 
-m\_normal = -1 / m\_tangent
+$$
+m_\text{normal} = -\frac{1}{m_\text{tangent}}
+$$
 
 ---
 
 ## ✅ Completed Topics from Khan Academy
 
-* [x] Average and instantaneous rate of change
-* [x] Secant and tangent lines
-* [x] Derivative notations
-* [x] Tangent line equation
-* [x] Derivative as slope of curve
-* [x] Power and basic derivative rules
-* [x] Differentiating polynomials
-* [x] Derivatives of trigonometric functions
-* [x] Derivatives of exponential and logarithmic functions
-* [x] Product and quotient rules
+* [x] Average and instantaneous rate of change  
+* [x] Secant and tangent lines  
+* [x] Derivative notations  
+* [x] Tangent line equation  
+* [x] Derivative as slope of curve  
+* [x] Power and basic derivative rules  
+* [x] Differentiating polynomials  
+* [x] Derivatives of trigonometric functions  
+* [x] Derivatives of exponential and logarithmic functions  
+* [x] Product and quotient rules  
 * [x] Slope of normal line
 
 ---
