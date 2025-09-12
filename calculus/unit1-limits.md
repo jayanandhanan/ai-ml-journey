@@ -15,9 +15,19 @@ $$
 $$
 
 **Example:**  
-$f(x) = \frac{x - 1}{x - 1}$  
-- At $x = 1$, this becomes $0/0$, which is undefined.  
-- But using the **limit** $\lim_{x \to 1} f(x)$, we analyze values of $x$ approaching 1 from both sides.
+
+$$
+f(x) = \frac{x - 1}{x - 1}
+$$
+
+- At $x = 1$, this becomes $\frac{0}{0}$, which is undefined.  
+- But using the **limit** 
+
+$$
+\lim_{x \to 1} f(x)
+$$
+
+we analyze values of $x$ approaching $1$ from both sides.
 
 ---
 
@@ -33,10 +43,17 @@ $$
 
 ## 🧮 Limit Properties
 
-If $\lim_{x \to a} f(x) = L$ and $\lim_{x \to a} g(x) = M$, then:  
-- $\lim_{x \to a} [f + g](x) = L + M$  
-- $\lim_{x \to a} [f \cdot g](x) = L \cdot M$  
-- $\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}$, if $M \neq 0$
+If 
+
+$$
+\lim_{x \to a} f(x) = L \quad \text{and} \quad \lim_{x \to a} g(x) = M
+$$
+
+then:
+
+- $$\lim_{x \to a} [f(x) + g(x)] = L + M$$
+- $$\lim_{x \to a} [f(x) \cdot g(x)] = L \cdot M$$
+- $$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}, \quad M \ne 0$$
 
 ---
 
@@ -45,6 +62,7 @@ If $\lim_{x \to a} f(x) = L$ and $\lim_{x \to a} g(x) = M$, then:
 $$
 \lim_{x \to a} f(g(x)) = f\Big(\lim_{x \to a} g(x)\Big)
 $$
+
 > When $f$ is continuous at $\lim g(x)$
 
 ---
@@ -52,10 +70,10 @@ $$
 ## 🧠 Strategies to Find Limits
 
 1. **Try direct substitution**:  
-   - If $f(a) = b/0$, suspect a vertical asymptote.  
+   - If $f(a) = \frac{b}{0}$, suspect a vertical asymptote.  
    - If $f(a) = b$, you're done!  
 
-2. **Indeterminate form $0/0$**: Try:  
+2. **Indeterminate form $\frac{0}{0}$**: Try:  
    - Factoring  
    - Rationalizing (conjugates)  
    - Trig identities  
@@ -67,7 +85,14 @@ $$
 
 Used when a function is trapped between two others:  
 
-If $f(x) \le g(x) \le h(x)$, and both outer limits equal $L$, then:  
+If 
+
+$$
+f(x) \le g(x) \le h(x)
+$$
+
+and both outer limits equal $L$, then:  
+
 $$
 \lim_{x \to a} g(x) = L
 $$
@@ -84,6 +109,7 @@ This causes a **removable discontinuity**.
 ## 🧩 Discontinuities
 
 Types of discontinuity at $x = c$:  
+
 - **Removable**: limit exists, but $f(c)$ is undefined or different  
 - **Jump**: left and right-hand limits are not equal  
 - **Infinite**: function approaches $\infty$ or $-\infty$  
@@ -92,22 +118,26 @@ Types of discontinuity at $x = c$:
 
 ## 🔄 Continuity
 
-### Continuity at a point $c$:  
+### Continuity at a point $c$  
+
 A function $f(x)$ is continuous at $c$ if:  
+
 1. $f(c)$ is defined  
 2. $\lim_{x \to c} f(x)$ exists  
 3. $\lim_{x \to c} f(x) = f(c)$  
 
-### Continuity over an interval:  
-If a function is continuous at **every point** in the interval.
+### Continuity over an interval  
+
+A function is continuous if it is continuous at **every point** in the interval.
 
 ---
 
 ## 🔧 Removing Discontinuity (Example)
 
 Given:  
+
 $$
-f(x) = \frac{x^2 - 9}{x - 3} = \frac{(x - 3)(x + 3)}{x - 3} = x + 3, \quad x \ne 3
+f(x) = \frac{x^2 - 9}{x - 3} = \frac{(x - 3)(x + 3)}{x - 3}, \quad x \ne 3
 $$
 
 - The function has a **removable discontinuity** at $x = 3$  
@@ -118,15 +148,19 @@ $$
 ## 🔭 Infinite Limits & Limits at Infinity
 
 ### Infinite Limit:  
+
 $$
 \lim_{x \to a} f(x) = \infty
 $$
+
 ⇒ Vertical asymptote at $x = a$
 
 ### Limit at Infinity:  
+
 $$
 \lim_{x \to \infty} \frac{1}{x} = 0
 $$
+
 ⇒ Horizontal asymptote at $y = 0$
 
 ---
@@ -134,6 +168,7 @@ $$
 ## 📏 Delta-Epsilon Definition
 
 For a formal proof:  
+
 $$
 \lim_{x \to c} f(x) = L \iff \forall \epsilon > 0, \exists \delta > 0 \text{ such that } 0 < |x - c| < \delta \implies |f(x) - L| < \epsilon
 $$
@@ -143,7 +178,9 @@ $$
 ## 📍 Intermediate Value Theorem
 
 If $f$ is continuous on $[a, b]$ and $N$ is between $f(a)$ and $f(b)$,  
+
 then there exists $c \in [a, b]$ such that:  
+
 $$
 f(c) = N
 $$
