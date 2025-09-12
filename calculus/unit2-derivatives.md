@@ -172,10 +172,5 @@ $$
 
 ---
 
-## 📚 Reference
-
-Khan Academy: [Unit 2 – Derivatives – Definition and Basic Rules](https://www.khanacademy.org/math/calculus-1/cs1-derivatives-definition-and-basic-rules)
-
----
-
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI model building.
+
