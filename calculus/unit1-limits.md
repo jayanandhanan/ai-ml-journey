@@ -200,10 +200,4 @@ $$
 
 ---
 
-## 📚 Reference
-
-Khan Academy: [Unit 1 – Limits and Continuity](https://www.khanacademy.org/math/calculus-1/cs1-limits-and-continuity)
-
----
-
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI model building.
