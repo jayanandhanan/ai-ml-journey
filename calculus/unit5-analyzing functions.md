@@ -52,15 +52,7 @@ $$
 * **Local Maximum:** $f'(x)=0$ and $f'$ changes from $+ \to -$
 * **Local Minimum:** $f'(x)=0$ and $f'$ changes from $- \to +$
 
-**Example Table:**
-
-| Interval      | $f'(x)$ | Graph Behavior |
-| ------------- | ------- | -------------- |
-| $(-\infty,0)$ | $+$     | Increasing     |
-| $(0,2)$       | $-$     | Decreasing     |
-| $(2,\infty)$  | $+$     | Increasing     |
-
-* Local min at $x=2$, local max at $x=0$.
+*Example:* $f(x)=x^3-3x^2$ → local max at $x=0$, local min at $x=2$.
 
 ---
 
@@ -81,13 +73,6 @@ $$
 * **Concave Up:** $f''(x) > 0$ → graph curves upward, slope $f'(x)$ increasing.
 * **Concave Down:** $f''(x) < 0$ → graph curves downward, slope $f'(x)$ decreasing.
 * **Inflection Points:** Points where $f''(x)=0$ and concavity changes.
-
-**Example Table:**
-
-| Interval      | $f'(x)$    | $f''(x)$ | Graph Concavity |
-| ------------- | ---------- | -------- | --------------- |
-| $(-\infty,1)$ | Increasing | $+$      | Concave up      |
-| $(1,3)$       | Decreasing | $-$      | Concave down    |
 
 **Graphical Representation:**
 
@@ -125,32 +110,24 @@ Steps:
 6. Evaluate **endpoints** (if closed interval)
 7. Sketch with concavity and extrema in mind
 
-**Example Sketch Table:**
-
-| x  | f(x) | f'(x) | f''(x) | Behavior                 |
-| -- | ---- | ----- | ------ | ------------------------ |
-| -1 | ...  | +     | +      | Increasing, concave up   |
-| 0  | ...  | 0     | -      | Max, concave down        |
-| 1  | ...  | -     | -      | Decreasing, concave down |
-| 2  | ...  | 0     | +      | Min, concave up          |
-
 ---
 
 ## 📌 Connecting $f$, $f'$, and $f''$
 
 * **f'** indicates slope of $f$ → increasing/decreasing
 * **f''** indicates slope of $f'$ → concavity
-* **Summary:**
+* **Summary Table of Behavior:**  
 
-  * $f'>0$ → $f$ increasing
-  * $f'<0$ → $f$ decreasing
-  * $f''>0$ → $f$ concave up
-  * $f''<0$ → $f$ concave down
+| $f'(x)$ sign | $f''(x)$ sign | $f(x)$ behavior & graph look                    |
+|--------------|--------------|-----------------------------------------------|
+| $+$          | $+$          | Increasing & Concave Up (rising, bowl-shaped)  |
+| $+$          | $-$          | Increasing & Concave Down (rising, arching)    |
+| $-$          | $+$          | Decreasing & Concave Up (falling, bowl-shaped) |
+| $-$          | $-$          | Decreasing & Concave Down (falling, arching)   |
 
-**Example Graphs:**
-
-* $f(x)=x^3-3x^2$
-* $f'(x)=3x^2-6x$
+**Example Graphs:**  
+* $f(x)=x^3-3x^2$  
+* $f'(x)=3x^2-6x$  
 * $f''(x)=6x-6$
 
 ---
