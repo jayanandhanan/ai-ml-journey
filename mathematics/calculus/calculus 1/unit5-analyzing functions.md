@@ -164,17 +164,17 @@ $\frac{dy}{dx} = \frac{3y-2x}{8y-3x}$
 
 ## ✅ Summary of Topics in Unit 5
 
-* Mean Value Theorem
-* Extreme Value Theorem & Critical Points
-* Intervals of Increase/Decrease
-* Relative (Local) Extrema
-* Absolute (Global) Extrema
-* Concavity & Inflection Points
-* Second Derivative Test
-* Sketching Curves
-* Connecting $f$, $f'$, $f''$
-* Optimization Problems
-* Analyzing Implicit Relations
+* [x] Mean Value Theorem
+* [x] Extreme Value Theorem & Critical Points
+* [x] Intervals of Increase/Decrease
+* [x] Relative (Local) Extrema
+* [x] Absolute (Global) Extrema
+* [x] Concavity & Inflection Points
+* [x] Second Derivative Test
+* [x] Sketching Curves
+* [x] Connecting $f$, $f'$, $f''$
+* [x] Optimization Problems
+* [x] Analyzing Implicit Relations
 
 ---
 
