@@ -1,6 +1,6 @@
 # 📘 Calculus 1 – Unit 4: Applications of Derivatives
 
-*This file documents concepts and strategies I learned from Khan Academy's Unit on Applications of Derivatives.*
+*This file documents concepts and strategies I learned from Khan Academy's Unit 4 of Calculus 1: Applications of Derivatives.*
 
 🔗 Source: [Khan Academy – Applications of Derivatives](https://www.khanacademy.org/math/calculus-1/cs1-applications-of-derivatives)
 
@@ -172,5 +172,6 @@ $$
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
 
