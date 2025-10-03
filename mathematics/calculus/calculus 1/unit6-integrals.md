@@ -1,208 +1,250 @@
-# 📘 Calculus 1 – Unit 6: Integrals & Accumulation
+# 📘 Calculus 1 – Unit 6: Integrals
 
-*This file documents concepts, strategies, and examples from Khan Academy's Unit on Integrals.*
+*This file documents concepts, strategies, and worked examples from Khan Academy's Unit on Integrals.*
 
 🔗 Source: [Khan Academy – Integrals](https://www.khanacademy.org/math/calculus-1/cs1-integrals)
 
 ---
 
-## 📌 Accumulations of Change – Introduction: Integrals
+## 📌 Accumulations of Change — Introduction to Integrals
 
-* If a quantity changes at rate $f(x)$, then the accumulated change from $a$ to $b$ is:
+If a function $f(x)$ represents a rate of change, then the accumulated change from $a$ to $b$ is:
 
 $$
 \int_a^b f(x)\,dx
 $$
 
-* Geometric meaning: the **signed area** under the curve.
+This represents the **signed area** under $f(x)$ between $x=a$ and $x=b$.
 
 **Example:**
 
-Water flows at rate $r(t)=5$ liters/min. Over 10 minutes:
-
+If $f(x)=3$, then
 $$
-\int_0^{10} 5\,dt = 50 \ \text{liters}
+\int_1^4 3\,dx = 3\cdot(4-1)=9
 $$
 
 ---
 
 ## 📌 Approximation with Riemann Sums
 
-Approximate area with rectangles:
+Divide $[a,b]$ into $n$ subintervals of equal width:
 
 $$
-\sum_{i=1}^n f(x_i^*) \,\Delta x
+\Delta x=\frac{b-a}{n}, \quad x_i=a+i\Delta x
 $$
 
-* **Left Riemann Sum:** use left endpoints  
-* **Right Riemann Sum:** use right endpoints  
-* **Midpoint Rule:** use midpoints
+A general Riemann sum is:
+
+$$
+\sum_{i=1}^n f(x_i^*)\,\Delta x
+$$
+
+where $x_i^*$ is any point in $[x_{i-1},x_i]$.
+
+* Special cases:  
+  - Left sum: $x_i^*=x_{i-1}$  
+  - Right sum: $x_i^*=x_i$  
+  - Midpoint sum: $x_i^*=\dfrac{x_{i-1}+x_i}{2}$
+
+---
+
+## 📌 Summation Notation Review
+
+Common formulas:
+
+$$
+\sum_{i=1}^n i = \frac{n(n+1)}{2}, \quad
+\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}, \quad
+\sum_{i=1}^n c = nc
+$$
 
 ---
 
 ## 📌 Riemann Sums in Summation Notation
 
-For interval $[a,b]$, subdivide into $n$ parts:
+For $f(x)$ on $[a,b]$, a Riemann sum with $n$ rectangles is:
 
 $$
-\Delta x = \frac{b-a}{n}
-$$
-
-Right sum:
-
-$$
-\sum_{i=1}^n f\\big(X_i)\Delta x\,\Delta x
+\sum_{i=1}^n f\big(X_i)\Delta x\, \quad \Delta x=\frac{b-a}{n}
 $$
 
 ---
 
 ## 📌 Defining Integrals with Riemann Sums
 
-The definite integral is defined as the limit:
+The **definite integral** is defined as the limit of Riemann sums:
 
 $$
-\int_a^b f(x)\,dx = \lim_{n\to\infty}\sum_{i=1}^n f(x_i^*)\Delta x
+\int_a^b f(x)\,dx = \lim_{n\to\infty}\sum_{i=1}^n f(x_i^*)\,\Delta x
 $$
+
+if the limit exists.
 
 ---
 
-## 📌 Fundamental Theorem of Calculus & Accumulation Functions
+## 📌 Fundamental Theorem of Calculus and Accumulation Functions
 
-* Define $F(x)=\int_a^x f(t)\,dt$  
-* Then $F'(x)=f(x)$ if $f$ is continuous
+**FTC Part 1:**  
+If $F(x)=\int_a^x f(t)\,dt$, then
+
+$$
+F'(x)=f(x)
+$$
 
 **Example:**
 
-$$
-F(x)=\int_0^x \sin t\,dt \quad\implies\quad F'(x)=\sin x
-$$
+$F(x)=\int_0^x \cos(t)\,dt \quad\implies\quad F'(x)=\cos(x)$
 
 ---
 
 ## 📌 Interpreting the Behavior of Accumulation Functions
 
-* If $f(x)>0$, $F(x)$ is increasing  
-* If $f(x)<0$, $F(x)$ is decreasing  
-* Zeros of $f(x)$ correspond to extrema of $F(x)$
+If $F(x)=\int_a^x f(t)\,dt$:
+
+- $F$ increases where $f(x)>0$
+- $F$ decreases where $f(x)<0$
+- Local maxima/minima of $F$ occur where $f(x)$ changes sign
 
 ---
 
 ## 📌 Properties of Definite Integrals
 
-1. $\int_a^b f(x)\,dx = -\int_b^a f(x)\,dx$  
-2. $\int_a^a f(x)\,dx = 0$  
-3. $\int_a^b f(x)\,dx+\int_b^c f(x)\,dx=\int_a^c f(x)\,dx$  
-4. $\int_a^b c f(x)\,dx = c\int_a^b f(x)\,dx$  
-5. $\int_a^b (f+g)=\int_a^b f + \int_a^b g$
+- $\int_a^a f(x)\,dx=0$
+- $\int_a^b f(x)\,dx = -\int_b^a f(x)\,dx$
+- $\int_a^c f(x)\,dx = \int_a^b f(x)\,dx + \int_b^c f(x)\,dx$
+- $\int_a^b \big(f(x)+g(x)\big)\,dx = \int_a^b f(x)\,dx + \int_a^b g(x)\,dx$
+- $\int_a^b k f(x)\,dx = k \int_a^b f(x)\,dx$
 
 ---
 
-## 📌 Fundamental Theorem of Calculus & Definite Integrals
+## 📌 Fundamental Theorem of Calculus and Definite Integrals
 
-If $F$ is an antiderivative of $f$:
+**FTC Part 2:**  
+If $F'(x)=f(x)$, then
 
 $$
-\int_a^b f(x)\,dx = F(b)-F(a)
+\int_a^b f(x)\,dx=F(b)-F(a)
 $$
+
+**Example:**
+
+$\int_0^2 3x^2\,dx = \big[x^3\big]_0^2=8$
 
 ---
 
 ## 📌 Reverse Power Rule
 
-$$
-\int x^n dx = \frac{x^{n+1}}{n+1}+C \quad (n\neq -1)
-$$
-
-**Example:**
+For $n\neq -1$:
 
 $$
-\int x^3 dx = \frac{x^4}{4}+C
+\int x^n\,dx=\frac{x^{n+1}}{n+1}+C
 $$
 
 ---
 
 ## 📌 Indefinite Integrals of Common Functions
 
-| $f(x)$          | $\int f(x)\,dx$ |
-|-----------------|-----------------|
-| $e^x$           | $e^x+C$ |
-| $\sin x$        | $-\cos x+C$ |
-| $\cos x$        | $\sin x+C$ |
-| $\sec^2 x$      | $\tan x+C$ |
-| $\csc^2 x$      | $-\cot x+C$ |
-| $\sec x \tan x$ | $\sec x+C$ |
-| $\csc x \cot x$ | $-\csc x+C$ |
-| $1/x$           | $\ln|x|+C$ |
+| Function $f(x)$ | Antiderivative $\int f(x)\,dx$ |
+|-----------------|--------------------------------|
+| $e^x$           | $e^x+C$                        |
+| $\sin(x)$       | $-\cos(x)+C$                   |
+| $\cos(x)$       | $\sin(x)+C$                    |
+| $\sec^2(x)$     | $\tan(x)+C$                    |
+| $\csc^2(x)$     | $-\cot(x)+C$                   |
+| $\sec(x)\tan(x)$| $\sec(x)+C$                    |
+| $\csc(x)\cot(x)$| $-\csc(x)+C$                   |
+| $1/x$           | $\ln|x|+C$                     |
 
 ---
 
 ## 📌 Definite Integrals of Common Functions
 
-* $\int_a^b e^x dx = e^b-e^a$  
-* $\int_0^\pi \sin x dx = 2$  
-* $\int_1^e \tfrac{1}{x} dx = 1$
+- $\int_a^b e^x\,dx=e^b-e^a$  
+- $\int_0^\pi \sin(x)\,dx=2$  
+- $\int_1^e \frac{1}{x}\,dx=1$
 
 ---
 
 ## 📌 Integrating with $u$-Substitution
 
-If $u=g(x)$, then:
-
-$$
-\int f(g(x))g'(x)\,dx = \int f(u)\,du
-$$
+Let $u=g(x)$, then $du=g'(x)\,dx$.
 
 **Example:**
 
 $$
-\int 2x(x^2+1)^5 dx \quad u=x^2+1 \quad\implies\quad \int u^5 du = \frac{u^6}{6}+C
+\int 2x e^{x^2}\,dx,\quad u=x^2, \, du=2x\,dx
+$$
+
+$$
+\int e^u\,du=e^u+C=e^{x^2}+C
 $$
 
 ---
 
-## 📌 Integrating Using Long Division & Completing the Square
+## 📌 Integrating Using Long Division and Completing the Square
 
-* If degree of numerator $\geq$ denominator, use polynomial long division.  
-* Completing the square can simplify quadratics under radicals or denominators.
+**Long division:** use when $\deg(\text{numerator}) \ge \deg(\text{denominator})$.  
+**Completing the square:** transforms quadratic denominators for $\arctan$ or $\ln$ integrals.
 
 **Example:**
 
 $$
-\int \frac{x^2+1}{x+1}\,dx = \int \Big(x-1+\frac{2}{x+1}\Big)dx = \frac{x^2}{2}-x+2\ln|x+1|+C
+\int \frac{1}{x^2-14x+58}\,dx
+$$
+
+Complete the square: $x^2-14x+58=(x-7)^2+9$
+
+$$
+\int \frac{1}{(x-7)^2+3^2}\,dx=\frac{1}{3}\arctan\!\left(\frac{x-7}{3}\right)+C
 $$
 
 ---
 
 ## 📌 Integrating Using Trigonometric Identities
 
-Use trig identities to simplify:
-
-* $\sin^2x = \frac{1-\cos 2x}{2}$  
-* $\cos^2x = \frac{1+\cos 2x}{2}$  
-* $\sin x \cos x = \tfrac{1}{2}\sin 2x$
+- $\sin^2(x)=\frac{1-\cos(2x)}{2}$  
+- $\cos^2(x)=\frac{1+\cos(2x)}{2}$  
+- $\sin(x)\cos(x)=\frac{1}{2}\sin(2x)$  
 
 **Example:**
 
 $$
-\int \sin^2x\,dx = \int \frac{1-\cos 2x}{2}\,dx = \frac{x}{2}-\frac{\sin 2x}{4}+C
+\int \sin^2(x)\,dx=\int \frac{1-\cos(2x)}{2}\,dx=\frac{x}{2}-\frac{\sin(2x)}{4}+C
+$$
+
+---
+
+## 📌 Numerical Integration — Midpoint and Trapezoidal Rules
+
+**Midpoint rule:**
+
+$$
+M_n = \Delta x \sum_{i=1}^n f\left(\frac{x_{i-1}+x_i}{2}\right)
+$$
+
+**Trapezoidal rule:**
+
+$$
+T_n = \frac{\Delta x}{2}\left(f(x_0)+2\sum_{i=1}^{n-1}f(x_i)+f(x_n)\right)
 $$
 
 ---
 
 ## ✅ Summary of Topics in Unit 6
 
-* Accumulations of change  
-* Riemann sums & summation notation  
-* Defining integrals via Riemann sums  
-* Fundamental Theorem of Calculus  
-* Accumulation functions & interpretation  
-* Properties of integrals  
+* Accumulations of change & integrals  
+* Approximation with Riemann sums  
+* Summation notation & Riemann sums in notation  
+* Defining integrals with limits of sums  
+* Fundamental Theorem of Calculus (Parts 1 & 2)  
+* Interpreting accumulation functions  
+* Properties of definite integrals  
 * Reverse power rule  
-* Indefinite & definite integrals of common functions  
+* Indefinite integrals of common functions  
+* Definite integrals of common functions  
 * $u$-substitution  
 * Long division & completing the square  
-* Trig identities in integration  
+* Integrating with trigonometric identities  
+* Numerical methods (midpoint & trapezoidal)  
 
-> This file is part of my AI/ML learning journey repo documenting foundational Calculus 1 skills, including step-by-step strategies, worked examples, and formula references.
-
-
+> Save this as `unit-6-integrals.md` in your repo to match the style of Unit 5.
