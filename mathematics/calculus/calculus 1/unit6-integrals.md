@@ -40,16 +40,6 @@ $$
 
 ---
 
-## 📌 Summation Notation Review
-
-* $\sum_{i=1}^n i = \tfrac{n(n+1)}{2}$  
-* $\sum_{i=1}^n i^2 = \tfrac{n(n+1)(2n+1)}{6}$  
-* $\sum_{i=1}^n c = nc$
-
-These are used to evaluate Riemann sums.
-
----
-
 ## 📌 Riemann Sums in Summation Notation
 
 For interval $[a,b]$, subdivide into $n$ parts:
@@ -61,7 +51,7 @@ $$
 Right sum:
 
 $$
-\sum_{i=1}^n f\!\big(a+i\Delta x\big)\,\Delta x
+\sum_{i=1}^n f\\big(X_i)\Delta x\,\Delta x
 $$
 
 ---
@@ -224,3 +214,4 @@ $$
 * Proofs of integration theorems
 
 > This file is part of my AI/ML learning journey repo documenting foundational Calculus 1 skills, including step-by-step strategies, worked examples, and formula references.
+
