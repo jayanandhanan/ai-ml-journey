@@ -11,7 +11,7 @@
 If a function $f(x)$ represents a rate of change, then the accumulated change from $a$ to $b$ is:
 
 $$
-\int_a^b f(x)\,dx
+\int_a^b f(x) dx
 $$
 
 This represents the **signed area** under $f(x)$ between $x=a$ and $x=b$.
@@ -19,8 +19,9 @@ This represents the **signed area** under $f(x)$ between $x=a$ and $x=b$.
 **Example:**
 
 If $f(x)=3$, then
+
 $$
-\int_1^4 3\,dx = 3\cdot(4-1)=9
+\int_1^4 3 dx = 3 \cdot (4-1) = 9
 $$
 
 ---
@@ -36,7 +37,7 @@ $$
 A general Riemann sum is:
 
 $$
-\sum_{i=1}^n f(x_i^*)\,\Delta x
+\sum_{i=1}^n f(x_i^*) \Delta x
 $$
 
 where $x_i^*$ is any point in $[x_{i-1},x_i]$.
@@ -45,6 +46,22 @@ where $x_i^*$ is any point in $[x_{i-1},x_i]$.
   - Left sum: $x_i^*=x_{i-1}$  
   - Right sum: $x_i^*=x_i$  
   - Midpoint sum: $x_i^*=\dfrac{x_{i-1}+x_i}{2}$
+
+---
+
+## 📌 Numerical Integration — Midpoint and Trapezoidal Rules
+
+**Midpoint rule:**
+
+$$
+M_n = \Delta x \sum_{i=1}^n f\left(\frac{x_{i-1}+x_i}{2}\right)
+$$
+
+**Trapezoidal rule:**
+
+$$
+T_n = \frac{\Delta x}{2}\left(f(x_0)+2\sum_{i=1}^{n-1}f(x_i)+f(x_n)\right)
+$$
 
 ---
 
@@ -65,7 +82,7 @@ $$
 For $f(x)$ on $[a,b]$, a Riemann sum with $n$ rectangles is:
 
 $$
-\sum_{i=1}^n f\big(X_i)\Delta x\, \quad \Delta x=\frac{b-a}{n}
+\sum_{i=1}^n f(x_i) \Delta x, \quad \Delta x=\frac{b-a}{n}
 $$
 
 ---
@@ -75,7 +92,7 @@ $$
 The **definite integral** is defined as the limit of Riemann sums:
 
 $$
-\int_a^b f(x)\,dx = \lim_{n\to\infty}\sum_{i=1}^n f(x_i^*)\,\Delta x
+\int_a^b f(x) dx = \lim_{n\to\infty}\sum_{i=1}^n f(x_i^*) \Delta x
 $$
 
 if the limit exists.
@@ -85,7 +102,7 @@ if the limit exists.
 ## 📌 Fundamental Theorem of Calculus and Accumulation Functions
 
 **FTC Part 1:**  
-If $F(x)=\int_a^x f(t)\,dt$, then
+If $F(x)=\int_a^x f(t) dt$, then
 
 $$
 F'(x)=f(x)
@@ -93,27 +110,9 @@ $$
 
 **Example:**
 
-$F(x)=\int_0^x \cos(t)\,dt \quad\implies\quad F'(x)=\cos(x)$
-
----
-
-## 📌 Interpreting the Behavior of Accumulation Functions
-
-If $F(x)=\int_a^x f(t)\,dt$:
-
-- $F$ increases where $f(x)>0$
-- $F$ decreases where $f(x)<0$
-- Local maxima/minima of $F$ occur where $f(x)$ changes sign
-
----
-
-## 📌 Properties of Definite Integrals
-
-- $\int_a^a f(x)\,dx=0$
-- $\int_a^b f(x)\,dx = -\int_b^a f(x)\,dx$
-- $\int_a^c f(x)\,dx = \int_a^b f(x)\,dx + \int_b^c f(x)\,dx$
-- $\int_a^b \big(f(x)+g(x)\big)\,dx = \int_a^b f(x)\,dx + \int_a^b g(x)\,dx$
-- $\int_a^b k f(x)\,dx = k \int_a^b f(x)\,dx$
+$$
+F(x)=\int_0^x \cos(t) dt \quad\implies\quad F'(x)=\cos(x)
+$$
 
 ---
 
@@ -123,12 +122,34 @@ If $F(x)=\int_a^x f(t)\,dt$:
 If $F'(x)=f(x)$, then
 
 $$
-\int_a^b f(x)\,dx=F(b)-F(a)
+\int_a^b f(x) dx=F(b)-F(a)
 $$
 
 **Example:**
 
-$\int_0^2 3x^2\,dx = \big[x^3\big]_0^2=8$
+$$
+\int_0^2 3x^2 dx = \big[x^3\big]_0^2 = 8
+$$
+
+---
+
+## 📌 Interpreting the Behavior of Accumulation Functions
+
+If $F(x)=\int_a^x f(t) dt$:
+
+- $F$ increases where $f(x)>0$
+- $F$ decreases where $f(x)<0$
+- Local maxima/minima of $F$ occur where $f(x)$ changes sign
+
+---
+
+## 📌 Properties of Definite Integrals
+
+- $\int_a^a f(x) dx=0$  
+- $\int_a^b f(x) dx = -\int_b^a f(x) dx$  
+- $\int_a^c f(x) dx = \int_a^b f(x) dx + \int_b^c f(x) dx$  
+- $\int_a^b \big(f(x)+g(x)\big) dx = \int_a^b f(x) dx + \int_a^b g(x) dx$  
+- $\int_a^b k f(x) dx = k \int_a^b f(x) dx$  
 
 ---
 
@@ -137,14 +158,14 @@ $\int_0^2 3x^2\,dx = \big[x^3\big]_0^2=8$
 For $n\neq -1$:
 
 $$
-\int x^n\,dx=\frac{x^{n+1}}{n+1}+C
+\int x^n dx=\frac{x^{n+1}}{n+1}+C
 $$
 
 ---
 
 ## 📌 Indefinite Integrals of Common Functions
 
-| Function $f(x)$ | Antiderivative $\int f(x)\,dx$ |
+| Function $f(x)$ | Antiderivative $\int f(x) dx$ |
 |-----------------|--------------------------------|
 | $e^x$           | $e^x+C$                        |
 | $\sin(x)$       | $-\cos(x)+C$                   |
@@ -159,24 +180,24 @@ $$
 
 ## 📌 Definite Integrals of Common Functions
 
-- $\int_a^b e^x\,dx=e^b-e^a$  
-- $\int_0^\pi \sin(x)\,dx=2$  
-- $\int_1^e \frac{1}{x}\,dx=1$
+- $\int_a^b e^x dx=e^b-e^a$  
+- $\int_0^\pi \sin(x) dx=2$  
+- $\int_1^e \frac{1}{x} dx=1$
 
 ---
 
 ## 📌 Integrating with $u$-Substitution
 
-Let $u=g(x)$, then $du=g'(x)\,dx$.
+Let $u=g(x)$, then $du=g'(x) dx$.
 
 **Example:**
 
 $$
-\int 2x e^{x^2}\,dx,\quad u=x^2, \, du=2x\,dx
+\int 2x e^{x^2} dx,\quad u=x^2, du=2x dx
 $$
 
 $$
-\int e^u\,du=e^u+C=e^{x^2}+C
+\int e^u du=e^u+C=e^{x^2}+C
 $$
 
 ---
@@ -189,13 +210,13 @@ $$
 **Example:**
 
 $$
-\int \frac{1}{x^2-14x+58}\,dx
+\int \frac{1}{x^2-14x+58} dx
 $$
 
 Complete the square: $x^2-14x+58=(x-7)^2+9$
 
 $$
-\int \frac{1}{(x-7)^2+3^2}\,dx=\frac{1}{3}\arctan\!\left(\frac{x-7}{3}\right)+C
+\int \frac{1}{(x-7)^2+3^2} dx=\frac{1}{3}\arctan\!\left(\frac{x-7}{3}\right)+C
 $$
 
 ---
@@ -209,23 +230,7 @@ $$
 **Example:**
 
 $$
-\int \sin^2(x)\,dx=\int \frac{1-\cos(2x)}{2}\,dx=\frac{x}{2}-\frac{\sin(2x)}{4}+C
-$$
-
----
-
-## 📌 Numerical Integration — Midpoint and Trapezoidal Rules
-
-**Midpoint rule:**
-
-$$
-M_n = \Delta x \sum_{i=1}^n f\left(\frac{x_{i-1}+x_i}{2}\right)
-$$
-
-**Trapezoidal rule:**
-
-$$
-T_n = \frac{\Delta x}{2}\left(f(x_0)+2\sum_{i=1}^{n-1}f(x_i)+f(x_n)\right)
+\int \sin^2(x) dx=\int \frac{1-\cos(2x)}{2} dx=\frac{x}{2}-\frac{\sin(2x)}{4}+C
 $$
 
 ---
@@ -234,9 +239,10 @@ $$
 
 * Accumulations of change & integrals  
 * Approximation with Riemann sums  
+* Numerical methods (midpoint & trapezoidal)  
 * Summation notation & Riemann sums in notation  
 * Defining integrals with limits of sums  
-* Fundamental Theorem of Calculus (Parts 1 & 2)  
+* Fundamental Theorem of Calculus — **Part 1**  & **Part 2**   
 * Interpreting accumulation functions  
 * Properties of definite integrals  
 * Reverse power rule  
@@ -245,6 +251,5 @@ $$
 * $u$-substitution  
 * Long division & completing the square  
 * Integrating with trigonometric identities  
-* Numerical methods (midpoint & trapezoidal)  
 
-> Save this as `unit-6-integrals.md` in your repo to match the style of Unit 5.
+> This file is part of my AI/ML learning journey repo documenting foundational Calculus 1 skills.
