@@ -161,17 +161,16 @@ $$
 
 ## ✅ Summary of Topics in Unit 4
 
-* Meaning of derivatives in context
-* Straight-line motion (position, velocity, acceleration)
-* Non-motion applications
-* Related rates: introduction and solving problems
-* Approximation with local linearity
-* L’Hôpital’s rule (including composite exponential forms)
-* Examples of derivatives of exponentials, logs, and chain rule applications
-
----
+* [x] Meaning of derivatives in context
+* [x] Straight-line motion (position, velocity, acceleration)
+* [x] Non-motion applications
+* [x] Related rates: introduction and solving problems
+* [x] Approximation with local linearity
+* [x] L’Hôpital’s rule (including composite exponential forms)
+* [x] Examples of derivatives of exponentials, logs, and chain rule applications
 
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
