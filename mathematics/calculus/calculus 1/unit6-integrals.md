@@ -174,7 +174,7 @@ $$
 | $\csc^2(x)$     | $-\cot(x)+C$                   |
 | $\sec(x)\tan(x)$| $\sec(x)+C$                    |
 | $\csc(x)\cot(x)$| $-\csc(x)+C$                   |
-| $1/x$           | $\ln|x|+C$                     |
+| $1/x$           | $\ln(x)+C$                    |
 
 ---
 
@@ -216,7 +216,7 @@ $$
 Complete the square: $x^2-14x+58=(x-7)^2+9$
 
 $$
-\int \frac{1}{(x-7)^2+3^2} dx=\frac{1}{3}\arctan\!\left(\frac{x-7}{3}\right)+C
+\int \frac{1}{(x-7)^2+3^2} dx=\frac{1}{3}\arctan\left(\frac{x-7}{3}\right)+C
 $$
 
 ---
@@ -255,4 +255,5 @@ $$
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
