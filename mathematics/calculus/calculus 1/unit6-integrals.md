@@ -252,4 +252,7 @@ $$
 * Long division & completing the square  
 * Integrating with trigonometric identities  
 
-> This file is part of my AI/ML learning journey repo documenting foundational Calculus 1 skills.
+---
+
+> This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
