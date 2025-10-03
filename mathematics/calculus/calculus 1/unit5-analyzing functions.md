@@ -1,6 +1,6 @@
 # 📘 Calculus 1 – Unit 5: Analyzing Functions
 
-*This file documents concepts, strategies, and examples from Khan Academy's Unit on Analyzing Functions.*
+*This file documents concepts, strategies, and examples from Khan Academy's Unit 5 of Calculus 1: Analyzing Functions.*
 
 🔗 Source: [Khan Academy – Analyzing Functions](https://www.khanacademy.org/math/calculus-1/cs1-analyzing-functions)
 
@@ -179,4 +179,5 @@ $\frac{dy}{dx} = \frac{3y-2x}{8y-3x}$
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
