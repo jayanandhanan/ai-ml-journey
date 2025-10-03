@@ -237,23 +237,24 @@ $$
 
 ## ✅ Summary of Topics in Unit 6
 
-* Accumulations of change & integrals  
-* Approximation with Riemann sums  
-* Numerical methods (midpoint & trapezoidal)  
-* Summation notation & Riemann sums in notation  
-* Defining integrals with limits of sums  
-* Fundamental Theorem of Calculus — **Part 1**  & **Part 2**   
-* Interpreting accumulation functions  
-* Properties of definite integrals  
-* Reverse power rule  
-* Indefinite integrals of common functions  
-* Definite integrals of common functions  
-* $u$-substitution  
-* Long division & completing the square  
-* Integrating with trigonometric identities  
+* [x] Accumulations of change & integrals  
+* [x] Approximation with Riemann sums  
+* [x] Numerical methods (midpoint & trapezoidal)  
+* [x] Summation notation & Riemann sums in notation  
+* [x] Defining integrals with limits of sums  
+* [x] Fundamental Theorem of Calculus — **Part 1**  & **Part 2**   
+* [x] Interpreting accumulation functions  
+* [x] Properties of definite integrals  
+* [x] Reverse power rule  
+* [x] Indefinite integrals of common functions  
+* [x] Definite integrals of common functions  
+* [x] $u$-substitution  
+* [x] Long division & completing the square  
+* [x] Integrating with trigonometric identities  
 
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
 
