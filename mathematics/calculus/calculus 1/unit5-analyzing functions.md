@@ -176,4 +176,7 @@ $\frac{dy}{dx} = \frac{3y-2x}{8y-3x}$
 * Optimization Problems
 * Analyzing Implicit Relations
 
-> This file is part of my AI/ML learning journey repo documenting foundational Calculus 1 skills, including pictorial representations and tables linking $f$, $f'$, and $f''$.
+---
+
+> This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
