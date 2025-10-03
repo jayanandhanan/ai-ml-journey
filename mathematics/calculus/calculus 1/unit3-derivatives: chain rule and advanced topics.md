@@ -210,7 +210,5 @@ $$
 
 ---
 
-> This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI model building.
-
-
+> This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
 
