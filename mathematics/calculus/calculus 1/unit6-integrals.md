@@ -189,15 +189,6 @@ $$
 
 ---
 
-## 📌 Proof Videos
-
-(Khan Academy provides detailed proofs for:  
-* Fundamental Theorem of Calculus  
-* Integration formulas  
-* Properties of definite integrals)
-
----
-
 ## ✅ Summary of Topics in Unit 6
 
 * Accumulations of change  
@@ -211,7 +202,7 @@ $$
 * $u$-substitution  
 * Long division & completing the square  
 * Trig identities in integration  
-* Proofs of integration theorems
 
 > This file is part of my AI/ML learning journey repo documenting foundational Calculus 1 skills, including step-by-step strategies, worked examples, and formula references.
+
 
