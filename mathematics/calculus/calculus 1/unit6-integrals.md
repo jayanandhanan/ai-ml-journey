@@ -210,7 +210,7 @@ $$
 $$
 
 ### 🔹 Natural Logarithm
-From $\int 1/x dx=\ln|x|$:
+From $\int \frac{1}{x} dx=\ln|x|$:
 
 $$
 \int_1^e \frac{1}{x} dx = \ln(e)-\ln(1)=1
@@ -325,6 +325,7 @@ $$
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
 
 
