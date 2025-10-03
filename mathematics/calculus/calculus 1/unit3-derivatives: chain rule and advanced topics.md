@@ -195,20 +195,21 @@ $$
 
 ## ✅ Completed Topics from Khan Academy
 
-* Chain Rule  
-* Identifying composite functions  
-* Derivatives of exponential and logarithmic functions (composite)  
-* Implicit differentiation  
-* Applications: slope of tangent line  
-* Derivatives of inverse functions (with formulas)  
-* Derivatives of inverse trig functions  
-* Differentiating using multiple rules  
-* Second derivatives (including implicit)  
-* Composite exponential function differentiation  
-* Disguised derivatives / derivatives using limits  
-* Logarithmic differentiation
+* [x] Chain Rule  
+* [x] Identifying composite functions  
+* [x] Derivatives of exponential and logarithmic functions (composite)  
+* [x] Implicit differentiation  
+* [x] Applications: slope of tangent line  
+* [x] Derivatives of inverse functions (with formulas)  
+* [x] Derivatives of inverse trig functions  
+* [x] Differentiating using multiple rules  
+* [x] Second derivatives (including implicit)  
+* [x] Composite exponential function differentiation  
+* [x] Disguised derivatives / derivatives using limits  
+* [x] Logarithmic differentiation
 
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
