@@ -182,7 +182,77 @@ $$
 
 - $\int_a^b e^x dx=e^b-e^a$  
 - $\int_0^\pi \sin(x) dx=2$  
-- $\int_1^e \frac{1}{x} dx=1$
+- $\int_1^e \frac{1}{x} dx=1$  
+
+### 🔹 Reverse Power Rule in Definite Integrals
+For $n\neq -1$:
+
+$$
+\int_a^b x^n dx = \left[\frac{x^{n+1}}{n+1}\right]_a^b = \frac{b^{n+1}-a^{n+1}}{n+1}
+$$
+
+### 🔹 Rational Functions
+When denominator is higher degree, often use substitution or partial fractions.
+
+**Example:**
+
+$$
+\int_1^2 \frac{1}{x^2} dx = \left[-\frac{1}{x}\right]_1^2 = -\frac{1}{2}+1=\frac{1}{2}
+$$
+
+### 🔹 Radical Functions
+Rewrite as powers.
+
+**Example:**
+
+$$
+\int_0^4 \sqrt{x} dx = \int_0^4 x^{1/2} dx = \left[\frac{2}{3}x^{3/2}\right]_0^4 = \frac{16}{3}
+$$
+
+### 🔹 Natural Logarithm
+From $\int 1/x dx=\ln|x|$:
+
+$$
+\int_1^e \frac{1}{x} dx = \ln(e)-\ln(1)=1
+$$
+
+### 🔹 Piecewise Functions
+Break the integral at boundary points.
+
+**Example:**
+
+$$
+f(x)=\begin{cases}
+x & x\leq 1 \\
+2 & x>1
+\end{cases}
+$$
+
+$$
+\int_0^2 f(x) dx=\int_0^1 x dx+\int_1^2 2 dx=\frac{1}{2}+2=2.5
+$$
+
+### 🔹 Absolute Value Functions
+Split at zeros of the expression inside.
+
+**Example:**
+
+$$
+\int_{-2}^2 |x| dx=\int_{-2}^0 (-x) dx+\int_0^2 x dx=2+2=4
+$$
+
+### 🔹 Integral of Adjacent Functions
+If the integral is split at a point $c$:
+
+$$
+\int_a^b f(x) dx=\int_a^c f(x) dx+\int_c^b f(x) dx
+$$
+
+And if $a=b$:
+
+$$
+\int_a^a f(x) dx=0
+$$
 
 ---
 
@@ -255,6 +325,7 @@ $$
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
 
 
