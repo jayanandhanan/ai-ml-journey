@@ -1,6 +1,6 @@
 # 📘 Calculus 1 – Unit 6: Integrals
 
-*This file documents concepts, strategies, and worked examples from Khan Academy's Unit on Integrals.*
+*This file documents concepts and strategies I learned from Khan Academy's Unit 6 of Calculus 1: Integrals.*
 
 🔗 Source: [Khan Academy – Integrals](https://www.khanacademy.org/math/calculus-1/cs1-integrals)
 
@@ -325,4 +325,5 @@ $$
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
