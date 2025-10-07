@@ -8,23 +8,23 @@
 
 ## 📌 Average Value of a Function
 
-The **average value** of a continuous function \(f(x)\) on \([a,b]\) is:
+The **average value** of a continuous function $f(x)$ on $[a,b]$ is:
 
 $$
 f_{\text{avg}} = \frac{1}{b-a} \int_a^b f(x)\,dx
 $$
 
-- **Example:** Find the average value of \(f(x)=x^2\) on \([0,2]\):
+- **Example:** Find the average value of $f(x)=x^2$ on $[0,2]$:
 
 $$
-f_{\text{avg}} = \frac{1}{2-0} \int_0^2 x^2 dx = \frac{1}{2} \cdot \frac{8}{3} = \frac{4}{3}
+f_{\text{avg}} = \frac{1}{2-0} \int_0^2 x^2 \, dx = \frac{1}{2} \cdot \frac{8}{3} = \frac{4}{3}
 $$
 
 ---
 
 ## 📌 Straight-Line Motion
 
-Position \(s(t)\), velocity \(v(t)\), and acceleration \(a(t)\) are related:
+Position $s(t)$, velocity $v(t)$, and acceleration $a(t)$ are related:
 
 $$
 v(t) = \frac{ds}{dt}, \quad a(t) = \frac{dv}{dt}
@@ -33,13 +33,13 @@ $$
 **Displacement:**
 
 $$
-\Delta s = \int_{t_0}^{t_1} v(t) dt
+\Delta s = \int_{t_0}^{t_1} v(t) \, dt
 $$
 
 **Distance traveled:**
 
 $$
-\text{Distance} = \int_{t_0}^{t_1} |v(t)| dt
+\text{Distance} = \int_{t_0}^{t_1} |v(t)| \, dt
 $$
 
 ---
@@ -48,78 +48,78 @@ $$
 
 Integrals can represent accumulated quantities such as:
 
-- Area under a curve
-- Total charge, mass, or energy
+- Area under a curve  
+- Total charge, mass, or energy  
 
-- **Example:** Total charge if current \(I(t)\):
+- **Example:** Total charge if current $I(t)$:
 
 $$
-Q = \int_{t_0}^{t_1} I(t) dt
+Q = \int_{t_0}^{t_1} I(t) \, dt
 $$
 
 ---
 
 ## 📌 Area: Vertical Area Between Curves
 
-For functions \(f(x)\) and \(g(x)\) with \(f(x) \ge g(x)\):
+For functions $f(x)$ and $g(x)$ with $f(x) \ge g(x)$:
 
 $$
-\text{Area} = \int_a^b \big(f(x) - g(x)\big) dx
+\text{Area} = \int_a^b \big(f(x) - g(x)\big) \, dx
 $$
 
-- **Example:** Area between \(f(x)=x^2\) and \(g(x)=x\) on \([0,1]\):
+- **Example:** Area between $f(x)=x^2$ and $g(x)=x$ on $[0,1]$:
 
 $$
-\int_0^1 (x - x^2) dx = \frac{1}{6}
+\int_0^1 (x - x^2) \, dx = \frac{1}{6}
 $$
 
 ---
 
 ## 📌 Area: Horizontal Area Between Curves
 
-If functions are given as \(x=f(y)\) and \(x=g(y)\):
+If functions are given as $x=f(y)$ and $x=g(y)$:
 
 $$
-\text{Area} = \int_c^d \big(f(y) - g(y)\big) dy
+\text{Area} = \int_c^d \big(f(y) - g(y)\big) \, dy
 $$
 
-- Useful when curves are better expressed as functions of \(y\).
+- Useful when curves are better expressed as functions of $y$.
 
 ---
 
 ## 📌 Area: Curves that Intersect at More Than Two Points
 
-- Break the interval at **intersection points**.
+- Break the interval at **intersection points**.  
 - Sum absolute differences:
 
 $$
-\text{Total Area} = \sum_i \int_{x_i}^{x_{i+1}} |f(x) - g(x)| dx
+\text{Total Area} = \sum_i \int_{x_i}^{x_{i+1}} |f(x) - g(x)| \, dx
 $$
 
 ---
 
 ## 📌 Volume: Cross Sections – Squares and Rectangles
 
-- For a solid with known cross-sectional area \(A(x)\):
+- For a solid with known cross-sectional area $A(x)$:
 
 $$
-\text{Volume} = \int_a^b A(x) dx
+\text{Volume} = \int_a^b A(x) \, dx
 $$
 
-- **Square cross-section:** \(A(x) = s^2\)  
-- **Rectangular cross-section:** \(A(x) = \text{width} \times \text{height}\)
+- **Square cross-section:** $A(x) = s^2$  
+- **Rectangular cross-section:** $A(x) = \text{width} \cdot \text{height}$
 
 ---
 
 ## 📌 Volume: Cross Sections – Triangles and Semicircles
 
-- **Triangular cross-section (base \(b\), height \(h\))**:
+- **Triangular cross-section (base $b$, height $h$):**
 
 $$
 A = \frac{1}{2} b h
 $$
 
-- **Semicircular cross-section (radius \(r\))**:
+- **Semicircular cross-section (radius $r$):**
 
 $$
 A = \frac{1}{2} \pi r^2
@@ -128,7 +128,7 @@ $$
 - Volume formula still:
 
 $$
-V = \int_a^b A(x) dx
+V = \int_a^b A(x) \, dx
 $$
 
 ---
@@ -138,43 +138,43 @@ $$
 - **Revolve around x-axis:**
 
 $$
-V = \pi \int_a^b [f(x)]^2 dx
+V = \pi \int_a^b [f(x)]^2 \, dx
 $$
 
 - **Revolve around y-axis:**
 
 $$
-V = \pi \int_c^d [f(y)]^2 dy
+V = \pi \int_c^d [f(y)]^2 \, dy
 $$
 
 ---
 
 ## 📌 Volume: Disc Method (Revolving Around Other Axes)
 
-- Shift functions by axis \(y=k\) or \(x=h\):
+- Shift functions by axis $y=k$ or $x=h$:
 
 $$
-V = \pi \int_a^b [f(x)-k]^2 dx
+V = \pi \int_a^b [f(x)-k]^2 \, dx
 $$
 
 ---
 
 ## 📌 Volume: Washer Method (Revolving Around x- or y-Axes)
 
-- Hollow disc (washer) with outer \(R(x)\) and inner \(r(x)\):
+- Hollow disc (washer) with outer $R(x)$ and inner $r(x)$:
 
 $$
-V = \pi \int_a^b \big(R(x)^2 - r(x)^2\big) dx
+V = \pi \int_a^b \big(R(x)^2 - r(x)^2\big) \, dx
 $$
 
 ---
 
 ## 📌 Volume: Washer Method (Revolving Around Other Axes)
 
-- For axis \(y=k\) or \(x=h\):
+- For axis $y=k$ or $x=h$:
 
 $$
-V = \pi \int_a^b \big([R(x)-k]^2 - [r(x)-k]^2\big) dx
+V = \pi \int_a^b \big([R(x)-k]^2 - [r(x)-k]^2\big) \, dx
 $$
 
 ---
