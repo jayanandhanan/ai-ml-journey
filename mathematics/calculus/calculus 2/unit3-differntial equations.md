@@ -168,9 +168,10 @@ $$
 
 For detailed explanations, examples, and derivations, see:
 
-👉 [Calculus 1 – Unit 7: Differential Equations](../calculus%201/unit7-differential-equations.md)
+👉 [Calculus 1 – Unit 7: Differential Equations](../calculus%201/unit7-differential_equations.md)
 
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
