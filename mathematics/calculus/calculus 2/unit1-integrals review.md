@@ -35,10 +35,11 @@ All these concepts were previously covered in **Calculus 1 – Unit 6: Integrals
 
 For detailed explanations, examples, and derivations, see:
 
-👉 [Calculus 1 – Unit 6: Integrals](mathematics/calculus/calculus%201/unit6-integrals.md)
+👉 [Calculus 1 – Unit 6: Integrals](../calculus%201/unit6-integrals.md)
 
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
 
