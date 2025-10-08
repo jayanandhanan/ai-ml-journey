@@ -8,12 +8,12 @@
 
 ## 📌 Integrating with $u$-Substitution
 
-Let $u = g(x)$, then $du = g'(x)\,dx$.
+Let $u = g(x)$, then $du = g'(x) dx$.
 
 **Example:**
 
 $$
-\int 2x e^{x^2} dx,\quad u=x^2, \, du=2x dx
+\int 2x e^{x^2} dx,\quad u=x^2 \, du=2x dx
 $$
 
 $$
@@ -71,7 +71,7 @@ Use substitution for integrals of the form:
 **Example:**
 
 $$
-\int \frac{dx}{\sqrt{4-x^2}} \quad\text{let } x = 2\sin\theta, \, dx = 2\cos\theta d\theta
+\int \frac{dx}{\sqrt{4-x^2}} \quad\text{let } x = 2\sin\theta \, dx = 2\cos\theta d\theta
 $$
 
 $$
@@ -85,7 +85,7 @@ $$
 Formula:
 
 $$
-\int u\, dv = uv - \int v\, du
+\int u dv = uv - \int v du
 $$
 
 **Example:**
@@ -94,7 +94,7 @@ $$
 \int x e^x dx
 $$
 
-Let $u = x$, $dv = e^x dx \implies du = dx, \, v = e^x$:
+Let $u = x$, $dv = e^x dx \implies du = dx \, v = e^x$:
 
 $$
 \int x e^x dx = x e^x - \int e^x dx = x e^x - e^x + C
@@ -163,3 +163,4 @@ $$
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
