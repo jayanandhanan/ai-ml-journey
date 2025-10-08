@@ -1,42 +1,42 @@
-# 🧮 Calculus 2 – Unit 1: Integrals Review
+# 📘 Calculus 2 – Unit 1: Integrals Review
 
-📘 **Khan Academy Link:** [Integrals Review](https://www.khanacademy.org/math/calculus-2/cs2-integrals-review)
+*This file documents concepts and strategies I reviewed from Khan Academy's Unit 1 of Calculus 2: Integrals Review.*
+
+🔗 Source: [Khan Academy – Integrals Review](https://www.khanacademy.org/math/calculus-2/cs2-integrals-review)
 
 ---
 
-## 🎯 Overview
+## 📌 Overview
 
-This unit revisits core concepts of **integration** from *Calculus 1*, providing a foundation for the new techniques introduced later in *Calculus 2*.
+This unit revisits the **fundamental ideas of integration** from Calculus 1, including the definition of integrals, Riemann sums, accumulation functions, and the Fundamental Theorem of Calculus.
 
-All main topics in this unit were already covered in **Calculus 1 – Unit 6: Integrals**, including:
+All these concepts were previously covered in **Calculus 1 – Unit 6: Integrals**, which explains them in full detail.
 
-- Accumulations of change and the meaning of integrals  
-- Approximation with Riemann sums  
-- Summation notation and sigma form  
-- Defining integrals using Riemann sums  
-- Fundamental Theorem of Calculus (Parts 1 & 2)  
-- Interpreting accumulation functions  
-- Properties of definite integrals  
-- Reverse power rule  
-- Common indefinite and definite integrals  
+---
 
-🔁 *New in this unit:*  
-- Proof-oriented videos emphasizing theoretical understanding of integral properties.
+## ✅ Topics Reviewed
+
+* [x] Accumulations of change introduction  
+* [x] Approximation with Riemann sums  
+* [x] Summation notation review  
+* [x] Riemann sums in summation notation  
+* [x] Defining integrals with Riemann sums  
+* [x] Fundamental theorem of calculus (Parts 1 & 2)  
+* [x] Interpreting accumulation functions  
+* [x] Properties of definite integrals  
+* [x] Reverse power rule  
+* [x] Indefinite integrals of common functions  
+* [x] Definite integrals of common functions  
+* [x] Proof-oriented videos  
 
 ---
 
 ## 🔗 Reference
 
-For detailed explanations, formulas, and examples, see:
+For detailed explanations, examples, and derivations, see:
 
-👉 [Calculus 1 – Unit 6: Integrals](../Calculus1/unit1-integrals.md)
-
----
-
-## 🧩 Key Takeaway
-
-This unit serves as a **conceptual bridge** between *Calculus 1* and the advanced **Integration Techniques** that begin in *Calculus 2 Unit 2* (e.g., *u-substitution*, *integration by parts*, *partial fractions*).
+👉 [Calculus 1 – Unit 6: Integrals](mathematics/calculus/calculus 1/unit6-integrals.md)
 
 ---
 
-**Next Unit →** [Unit 2: Integration Techniques](../Calculus2/unit2-integration techniques.md)
+> This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
