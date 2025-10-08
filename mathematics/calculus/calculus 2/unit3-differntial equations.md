@@ -43,76 +43,6 @@ $$
 
 ---
 
-## 📌 Slope Fields
-
-- Visual representation of the slope $\frac{dy}{dx}$ at given $(x,y)$ points.
-- Helps **reason about the behavior** of solutions without solving analytically.
-
-**Example:**  
-
-$$
-\frac{dy}{dx} = y \implies \text{slopes increase as } y \text{ increases.}
-$$
-
----
-
-## 📌 Separation of Variables
-
-For equations of the form:
-
-$$
-\frac{dy}{dx} = g(x)h(y)
-$$
-
-Separate:
-
-$$
-\frac{1}{h(y)} dy = g(x) dx
-$$
-
-Integrate both sides:
-
-$$
-\int \frac{1}{h(y)} dy = \int g(x) dx + C
-$$
-
-**Example:**  
-
-$$
-\frac{dy}{dx} = y \implies \frac{dy}{y} = dx \implies \ln|y| = x + C \implies y = Ce^x
-$$
-
----
-
-## 📌 Particular Solutions
-
-Use **initial conditions** $y(x_0) = y_0$ to find $C$:
-
-$$
-y(x) = Ce^x, \quad y(0)=2 \implies 2 = C e^0 \implies C=2
-$$
-
----
-
-## 📌 Exponential Growth and Decay
-
-Differential equation:
-
-$$
-\frac{dy}{dt} = ky
-$$
-
-Solution:
-
-$$
-y(t) = y_0 e^{kt}
-$$
-
-- $k>0$: growth  
-- $k<0$: decay  
-
----
-
 ## 📌 Logistic Models
 
 Accounts for **limited resources**. Differential equation:
@@ -155,7 +85,7 @@ $$
 **Example:**
 
 $$
-\frac{dy}{dx} = y, \quad y(0)=1, \, h=0.1
+\frac{dy}{dx} = y, \quad y(0)=1 \, h=0.1
 $$
 
 - $y_1 = y_0 + 0.1 y_0 = 1 + 0.1 = 1.1$  
@@ -173,6 +103,7 @@ For detailed explanations, examples, and derivations, see:
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
 
 
