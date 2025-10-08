@@ -27,8 +27,7 @@ All these concepts were previously covered in **Calculus 1 – Unit 8: Applicati
 * [x] Volume: disc method (revolving around x- and y-axes)  
 * [x] Volume: disc method (revolving around other axes)  
 * [x] Volume: washer method (revolving around x- and y-axes)  
-* [x] Volume: washer method (revolving around other axes)  
-* [x] Calculator practice  
+* [x] Volume: washer method (revolving around other axes)    
 
 ---
 
@@ -41,4 +40,5 @@ For detailed explanations, examples, and derivations, see:
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills before diving into machine learning and AI.
+
 
