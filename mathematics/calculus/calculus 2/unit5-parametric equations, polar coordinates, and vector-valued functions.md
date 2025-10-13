@@ -76,22 +76,73 @@ $$
 
 ## 📌 Vector-Valued Functions
 
-A vector-valued function:
+A vector-valued function can be expressed in **component form** using **unit vectors** $\mathbf{i}$ and $\mathbf{j}$:
 
 $$
-\vec{r}(t) = \langle f(t), g(t) \rangle
+\vec{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j}
 $$
 
 Velocity:
 
 $$
-\vec{v}(t) = \frac{d\vec{r}}{dt} = \langle x'(t), y'(t) \rangle
+\vec{v}(t) = \frac{d\vec{r}}{dt} = x'(t)\mathbf{i} + y'(t)\mathbf{j}
 $$
 
 Speed:
 
 $$
 |\vec{v}(t)| = \sqrt{ (x'(t))^2 + (y'(t))^2 }
+$$
+
+---
+
+### 🔹 Directional (unit vector) form
+
+The **unit vector along velocity**:
+
+$$
+\hat{v}(t) = \frac{\vec{v}(t)}{|\vec{v}(t)|}
+$$
+
+Then the velocity can be expressed as:
+
+$$
+\vec{v}(t) = |\vec{v}(t)| \hat{v}(t)
+$$
+
+---
+
+### Example
+
+Let:
+
+$$
+x(t) = t^2, \quad y(t) = t^3
+$$
+
+**Component form:**
+
+$$
+\vec{r}(t) = t^2 \mathbf{i} + t^3 \mathbf{j}, \quad 
+\vec{v}(t) = 2t \mathbf{i} + 3t^2 \mathbf{j}
+$$
+
+**Speed:**
+
+$$
+|\vec{v}(t)| = \sqrt{(2t)^2 + (3t^2)^2} = \sqrt{4t^2 + 9t^4}
+$$
+
+**Unit vector along velocity:**
+
+$$
+\hat{v}(t) = \frac{\vec{v}(t)}{|\vec{v}(t)|} = \left\langle \frac{2t}{\sqrt{4t^2 + 9t^4}}, \frac{3t^2}{\sqrt{4t^2 + 9t^4}} \right\rangle
+$$
+
+**Magnitude-direction form:**
+
+$$
+\vec{v}(t) = |\vec{v}(t)| \hat{v}(t) = \sqrt{4t^2 + 9t^4} \, \hat{v}(t)
 $$
 
 ---
@@ -205,5 +256,4 @@ $$
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills necessary for understanding vector calculus and motion before diving into machine learning and AI.
-
 
