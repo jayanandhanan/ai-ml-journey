@@ -1,6 +1,6 @@
 # 📘 Calculus 2 – Unit 5: Parametric Equations, Polar Coordinates, and Vector-Valued Functions
 
-*This file documents concepts and strategies learned from Khan Academy's Calculus 2 unit on Parametric Equations, Polar Coordinates, and Vector-Valued Functions.*
+*This file documents concepts and strategies I learned from Khan Academy's Calculus 2 unit on Parametric Equations, Polar Coordinates, and Vector-Valued Functions.*
 
 🔗 Source: [Khan Academy – Parametric Equations, Polar Coordinates, and Vector-Valued Functions](https://www.khanacademy.org/math/calculus-2/cs2-parametric-equations-polar-coordinates-and-vector-valued-functions)
 
@@ -59,7 +59,7 @@ $$
 Arc length of a parametric curve:
 
 $$
-L = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2} \, dt
+L = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2} dt
 $$
 
 **Example:**
@@ -69,7 +69,7 @@ x = t, \quad y = t^2, \quad t \in [0,1]
 $$
 
 $$
-L = \int_0^1 \sqrt{(dx/dt)^2 + (dy/dt)^2} \, dt = \int_0^1 \sqrt{1 + (2t)^2} \, dt = \int_0^1 \sqrt{1 + 4t^2} \, dt
+L = \int_0^1 \sqrt{(dx/dt)^2 + (dy/dt)^2} dt = \int_0^1 \sqrt{1 + (2t)^2} dt = \int_0^1 \sqrt{1 + 4t^2} dt
 $$
 
 ---
@@ -135,7 +135,7 @@ $$
 Area enclosed by a polar curve $r(\theta)$:
 
 $$
-A = \frac{1}{2} \int_{\alpha}^{\beta} r^2 \, d\theta
+A = \frac{1}{2} \int_{\alpha}^{\beta} r^2 d\theta
 $$
 
 **Example:**
@@ -145,7 +145,7 @@ r = 2\cos\theta, \quad \theta \in [0, \pi/2]
 $$
 
 $$
-A = \frac{1}{2} \int_0^{\pi/2} (2\cos\theta)^2 \, d\theta = 2 \int_0^{\pi/2} \cos^2\theta \, d\theta
+A = \frac{1}{2} \int_0^{\pi/2} (2\cos\theta)^2 d\theta = 2 \int_0^{\pi/2} \cos^2\theta d\theta
 $$
 
 ---
@@ -175,7 +175,7 @@ $$
 Arc length for a polar curve $r(\theta)$:
 
 $$
-L = \int_{\alpha}^{\beta} \sqrt{ r^2 + \left(\frac{dr}{d\theta}\right)^2 } \, d\theta
+L = \int_{\alpha}^{\beta} \sqrt{ r^2 + \left(\frac{dr}{d\theta}\right)^2 } d\theta
 $$
 
 **Example:**
@@ -185,7 +185,7 @@ r = 2\theta, \quad \theta \in [0, \pi]
 $$
 
 $$
-L = \int_0^\pi \sqrt{ (2\theta)^2 + (2)^2 } \, d\theta = \int_0^\pi \sqrt{4\theta^2 + 4} \, d\theta
+L = \int_0^\pi \sqrt{ (2\theta)^2 + (2)^2 } d\theta = \int_0^\pi \sqrt{4\theta^2 + 4} d\theta
 $$
 
 ---
@@ -205,4 +205,5 @@ $$
 ---
 
 > This file is part of my AI/ML journey repo documenting foundational math skills necessary for understanding vector calculus and motion before diving into machine learning and AI.
+
 
