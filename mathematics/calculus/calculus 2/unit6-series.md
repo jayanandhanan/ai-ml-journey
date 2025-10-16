@@ -1,6 +1,6 @@
 # 📘 Calculus 2 – Unit 6: Series
 
-*This file documents concepts, formulas, and examples from Khan Academy's Calculus 2 unit on Series.*
+*This file documents concepts, formulas, and strategies I learned from Khan Academy's Calculus 2 unit on Series.*
 
 🔗 Source: [Khan Academy – Series](https://www.khanacademy.org/math/calculus-2/cs2-series)
 
@@ -287,3 +287,4 @@ $$
 
 
 > This file is formatted exactly like Unit 5 and is part of an AI/ML journey repository documenting all foundational Calculus 2 series topics.
+
