@@ -286,5 +286,5 @@ $$
 ---
 
 
-> This file is formatted exactly like Unit 5 and is part of an AI/ML journey repository documenting all foundational Calculus 2 series topics.
+> This file is part of my AI/ML journey repo documenting foundational math skills necessary for understanding vector calculus and motion before diving into machine learning and AI.
 
