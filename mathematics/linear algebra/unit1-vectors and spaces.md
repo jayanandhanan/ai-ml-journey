@@ -415,6 +415,12 @@ $$
 
 Represents all solutions that map to zero.
 
+**Steps to find Null Space:**
+1. Write \( A x = 0 \).  
+2. Reduce \( A \) to RREF.  
+3. Express pivot variables in terms of free ones.  
+4. Write the general solution as a linear combination of basis vectors.
+
 ---
 
 ## 📌 26. Column Space of a Matrix
