@@ -1,584 +1,313 @@
 # 📘 Linear Algebra – Unit 2: Matrix Transformations
 
-*This file documents all concepts, formulas, and strategies I learned from Khan Academy’s Linear Algebra unit on Matrix Transformations.*
+*This file documents all concepts, formulas, and strategies from Khan Academy’s Linear Algebra unit on Matrix Transformations.*
 
-🔗 **Source:** *Khan Academy – Matrix Transformations*
+🔗 **Source:** [Khan Academy – Matrix Transformations](https://www.khanacademy.org/math/linear-algebra/matrix-transformations)
 
 ---
 
-# 📌 1. Functions, Domain, Codomain, Range
+## 📌 1. Functions, Domain, Codomain, Range
 
 A **function** maps each input to exactly one output:
 
-```
-f : A → B
-```
+$$
+f : A \to B
+$$
 
-* **Domain:** all allowed inputs
-* **Codomain:** all possible outputs
-* **Range:** all actual outputs produced
+- **Domain:** all allowed inputs  
+- **Codomain:** all possible outputs  
+- **Range:** set of actual outputs produced  
 
-A **transformation** is a function whose inputs and outputs are vectors.
-
-### Example
-
-```
-f(x) = x²
-Domain = ℝ
-Codomain = ℝ
-Range = [0, ∞)
-```
+A **transformation** is a function where inputs and outputs are vectors.
 
 ---
 
-# 📌 2. Vector Transformations
+## 📌 2. Vector Transformations
 
 A transformation between vector spaces:
 
-```
-T : ℝⁿ → ℝᵐ
-```
-
-### Example
-
-```
-T([x y]ᵀ) = [3x  
-             x + y]
-```
+$$
+T : \mathbb{R}^n \to \mathbb{R}^m
+$$
 
 ---
 
-# 📌 3. Linear Transformations
+## 📌 3. Linear Transformations
 
-A transformation is **linear** if:
+A transformation \(T\) is **linear** if:
 
-```
-1. T(u + v) = T(u) + T(v)
-2. T(cu) = cT(u)
-```
+$$
+T(u + v) = T(u) + T(v)
+$$
 
-Automatically implies:
+$$
+T(cu) = c \, T(u)
+$$
 
-```
+This implies automatically:
+
+$$
 T(0) = 0
-```
-
-### Example
-
-Check linearity:
-
-```
-T([x y]ᵀ) = [2x  
-             5y]
-```
-
-This is linear — no constants added, only scaling.
+$$
 
 ---
 
-# 📌 4. Visualizing Linear Transformations
+## 📌 4. Matrix from a Linear Transformation
 
-* Lines through origin remain lines
-* Grids become stretched grids
-* Shapes scale, rotate, shear, reflect
+Matrix \(A\) representing \(T\) is obtained by transforming standard basis vectors:
 
-### Example (shear)
+$$
+e_1 =
+\begin{bmatrix}
+1 \\
+0
+\end{bmatrix}, \quad
+e_2 =
+\begin{bmatrix}
+0 \\
+1
+\end{bmatrix}
+$$
 
-```
-A = [1 1
-     0 1]
-```
-
-This pushes points sideways depending on their y-value.
-
----
-
-# 📌 5. Matrix from a Linear Transformation
-
-For a linear transformation `T(x) = Ax`, the matrix `A` is built by transforming standard basis vectors.
-
-### Example
-
-```
-T(e₁) = [3  
-         1]
-
-T(e₂) = [2  
-         4]
-```
-
-Matrix:
-
-```
-A = [3 2
-     1 4]
-```
+$$
+A = 
+\begin{bmatrix}
+T(e_1) & T(e_2)
+\end{bmatrix}
+$$
 
 ---
 
-# 📌 6. Matrix–Vector Product as Linear Combination
+## 📌 5. Matrix–Vector Product as Linear Combination
 
-```
-Ax = x₁A₁ + x₂A₂ + ... + xₙAₙ
-```
+Columns of \(A\): \(A_1, A_2, \dots, A_n\)
 
-Where `A₁, A₂, ..., Aₙ` are the **columns** of `A`.
-
-### Example
-
-```
-A = [1 2
-     3 4]
-
-x = [5
-     6]
-```
-
-Compute:
-
-```
-Ax = 5[1 3]ᵀ + 6[2 4]ᵀ
-   = [17  
-      39]
-```
+$$
+Ax = x_1 A_1 + x_2 A_2 + \dots + x_n A_n
+$$
 
 ---
 
-# 📌 7. Image of a Vector and Image of a Set
+## 📌 6. Image and Pre-image
 
-**Image of vector**: `T(x)`
-**Image of set**:
-
-```
-T(S) = {T(x) | x ∈ S}
-```
-
-### Example
-
-Transform the unit square by matrix
-
-```
-A = [2 0
-     0 3]
-```
-
-Image: rectangle stretched 2× horizontally, 3× vertically.
+- **Image of a vector:** \(T(x)\)  
+- **Image of a set:** \(T(S) = \{T(x) \mid x \in S\}\)  
+- **Pre-image of y:** all \(x\) such that \(T(x) = y\)
 
 ---
 
-# 📌 8. Pre-Image and Kernel (Null Space)
+## 📌 7. Kernel (Null Space)
 
-**Pre-image** of `y` is set of all `x` such that:
-
-```
-T(x) = y
-```
-
-**Kernel** (null space):
-
-```
-ker(T) = { x | T(x) = 0 } = N(A)
-```
-
-### Example
-
-If
-
-```
-A = [1 2
-     2 4]
-```
-
-Solve `Ax = 0`:
-
-```
-x = t[-2  
-      1]
-```
-
-This whole line is the kernel.
+$$
+\ker(T) = \{x \mid T(x) = 0\}
+$$
 
 ---
 
-# 📌 9. Kernel Properties
+## 📌 8. Sums and Scalar Multiples of Linear Transformations
 
-The kernel is always a **subspace**:
+$$
+(T_1 + T_2)(x) = T_1(x) + T_2(x)
+$$
 
-* Contains 0
-* Closed under addition
-* Closed under scalar multiplication
-
-If:
-
-```
-ker(A) = {0}
-```
-
-Then transformation is **one-to-one**.
+$$
+(c \, T_1)(x) = c \, T_1(x)
+$$
 
 ---
 
-# 📌 10. Sums and Scalar Multiples of Transformations
+## 📌 9. Linear Transformation Types
 
-```
-(T₁ + T₂)(x) = T₁(x) + T₂(x)
-(cT₁)(x) = cT₁(x)
-```
+- **Scaling:** 
 
-For matrices:
+$$
+A =
+\begin{bmatrix}
+k & 0 \\
+0 & k
+\end{bmatrix}
+$$
 
-```
-(A + B)x = Ax + Bx
-(cA)x = c(Ax)
-```
+- **Reflection across x-axis:** 
 
-### Example
+$$
+A =
+\begin{bmatrix}
+1 & 0 \\
+0 & -1
+\end{bmatrix}
+$$
 
-```
-A = [1 0]   B = [3 2]
-    [0 1]        [1 4]
-```
+- **Rotation in \(\mathbb{R}^2\):**
 
-Then
-`A + B = [4 2; 1 5]`
-
----
-
-# 📌 11. Examples of Linear Transformations
-
-### Scaling
-
-```
-T(x) = 3x
-```
-
-### Reflection (across x-axis)
-
-```
-[1  0
- 0 -1]
-```
-
-### Rotation in ℝ²
-
-```
-Rθ = [cosθ  -sinθ
-      sinθ   cosθ]
-```
+$$
+A =
+\begin{bmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta
+\end{bmatrix}
+$$
 
 ---
 
-# 📌 12. Projections
+## 📌 10. Unit Vectors and Projections
 
-Projection of vector `v` onto `u`:
+Projection of \(v\) onto \(u\):
 
-```
-projᵤ(v) = (u·v)/(u·u) * u
-```
+$$
+\text{proj}_u(v) = \frac{u \cdot v}{u \cdot u} \, u
+$$
 
-Projection matrix:
+Matrix form:
 
-```
-P = (u uᵀ) / (uᵀu)
-```
-
-### Example
-
-Project `[3 4]ᵀ` onto `[1 0]ᵀ`:
-
-Result = `[3 0]ᵀ`.
+$$
+P = \frac{u u^T}{u^T u}
+$$
 
 ---
 
-# 📌 13. Composition of Transformations
+## 📌 11. Composition of Transformations
 
-```
-T₂(T₁(x)) = (A₂A₁)x
-```
-
-Matrix multiplication **is** composing transformations.
-
-### Example
-
-Rotate then scale:
-
-```
-A = scale(2)
-B = rotation(90°)
-```
-
-Composite = `A B`.
+$$
+T_2(T_1(x)) = B A x
+$$
 
 ---
 
-# 📌 14. Properties of Matrix Multiplication
+## 📌 12. Properties of Matrix Multiplication
 
-* Associative
-* Distributive
-* **Not commutative**
-
-### Example
-
-```
-AB ≠ BA
-```
-
-for most matrices.
+- Associative: \((AB)C = A(BC)\)  
+- Distributive: \(A(B + C) = AB + AC\)  
+- Not commutative: \(AB \neq BA\)
 
 ---
 
-# 📌 15. Inverse Transformations
+## 📌 13. Inverse Transformations
 
-A function or matrix is invertible if:
+$$
+T^{-1}(T(x)) = x
+$$
 
-```
-T⁻¹(T(x)) = x
-```
+**Matrix Condition:**
 
-For matrices:
-
-```
-AA⁻¹ = A⁻¹A = I
-```
+$$
+A \text{ invertible } \iff \det(A) \neq 0
+$$
 
 ---
 
-# 📌 16. When Is a Matrix Invertible?
+## 📌 14. Conditions for Invertibility
 
 A square matrix is invertible iff:
 
-* det(A) ≠ 0
-* Rank = n
-* Nullity = 0
-* Columns are independent
-* Transformation is 1-1 and onto
-
-### Example
-
-```
-A = [1 2
-     3 4] → det = -2 ≠ 0 → invertible
-```
+1. \(\det(A) \neq 0\)  
+2. Columns independent  
+3. Rank = n  
+4. Nullity = 0  
+5. Transformation is one-to-one and onto
 
 ---
 
-# 📌 17. Surjective (Onto) and Injective (One-to-One)
+## 📌 15. Surjective (Onto) and Injective (One-to-One)
 
-### Onto
-
-Every `y` has some `x` such that `Ax = y`.
-
-Condition:
-
-```
-Column space = ℝⁿ
-```
-
-### One-to-One
-
-```
-Ax = 0 ⇒ x = 0
-```
-
-Condition:
-
-```
-ker(A) = {0}
-```
+- **Onto:** Every \(y\) has some \(x\) s.t. \(Ax = y\)  
+- **One-to-One:** \(Ax = 0 \implies x = 0\)
 
 ---
 
-# 📌 18. Solving Ax = b: Structure of Solutions
+## 📌 16. Solving \(Ax = b\)
 
 General solution:
 
-```
-x = xₚ + xₙ
-```
+$$
+x = x_p + x_n
+$$
 
-Where:
-
-* `xₚ` = a particular solution
-* `xₙ` = general null-space vector
-
-### Example
-
-Solve:
-
-```
-x + y = 2
-2x + 2y = 4  (same equation)
-```
-
-Particular: `xₚ = [2 0]ᵀ`
-Null space: `t[-1 1]`.
-
-Solution:
-
-```
-x = [2 0]ᵀ + t[-1 1]ᵀ
-```
+Where \(x_p\) = particular solution, \(x_n\) = null-space vector.
 
 ---
 
-# 📌 19. Matrix Condition for One-to-One
+## 📌 17. Determinants
 
-Equivalent conditions:
+**2×2:**
 
-* Null space = `{0}`
-* Pivot in every column
-* Columns linearly independent
-* Rank = number of columns
+$$
+\det
+\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}
+= ad - bc
+$$
 
----
+**3×3 (Sarrus rule):**
 
-# 📌 20. Determinants
-
-### Uses
-
-* Invertibility
-* Orientation
-* Area/volume scaling
-* Change of variables
-* Geometric meaning of matrix
-
-### Example
-
-Rotation matrix:
-
-```
-det = 1
-```
-
-→ preserves area.
-
-Reflection:
-
-```
-det = -1
-```
-
-→ area same but orientation flips.
+$$
+\det
+\begin{bmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{bmatrix}
+= aei + bfg + cdh - ceg - bdi - afh
+$$
 
 ---
 
-# 📌 21. Computing Determinants
+## 📌 18. Determinants and Geometry
 
-### 2×2
-
-```
-|a b|
-|c d| = ad − bc
-```
-
-### 3×3 (Sarrus)
-
-```
-|a b c|
-|d e f|
-|g h i|
-
-= aei + bfg + cdh − ceg − bdi − afh
-```
+- Area scaling in \(\mathbb{R}^2\), volume in \(\mathbb{R}^3\): \(|\det(A)|\)  
+- 0 → collapse to lower dimension
 
 ---
 
-# 📌 22. Determinants and Geometry
+## 📌 19. Transpose of a Matrix
 
-If `A` maps a square → parallelogram:
-
-```
-Area(new) = |det(A)| * Area(original)
-```
-
-### Example
-
-```
-A = [2 0
-     0 3]
-```
-
-→ Area scaled by `2×3 = 6`.
-
----
-
-# 📌 23. Transpose of a Matrix
-
-Definition:
-
-```
-(Aᵀ)ᵢⱼ = Aⱼᵢ
-```
+$$
+(A^T)_{ij} = A_{ji}
+$$
 
 Properties:
 
-```
-(Aᵀ)ᵀ = A
-(AB)ᵀ = BᵀAᵀ
-det(Aᵀ) = det(A)
-```
+- \((A^T)^T = A\)  
+- \((AB)^T = B^T A^T\)  
+- \(\det(A^T) = \det(A)\)
 
 ---
 
-# 📌 24. Row Space and Left Null Space
+## 📌 20. Row Space, Column Space, Null Spaces
 
-* **Row space** = span of rows
-* **Null space** = solutions to `Ax = 0`
-* **Left null space** = solutions to `Aᵀy = 0`
+- Row space = span of rows  
+- Column space = span of columns  
+- Null space = \(\{x \mid Ax = 0\}\)  
+- Left null space = \(\{y \mid A^T y = 0\}\)  
 
----
+**Orthogonality:**
 
-# 📌 25. Orthogonality Relationships
-
-```
-Row space ⟂ Null space
-Column space ⟂ Left null space
-```
-
-### Example
-
-If `Ax = 0`, then `rowᵢ · x = 0` → row vectors are orthogonal to null-space vectors.
+- Row space ⟂ Null space  
+- Column space ⟂ Left null space
 
 ---
 
-# 📌 26. Rank of A and Aᵀ
+## 📌 21. Rank and Invertibility
 
-```
-rank(A) = rank(Aᵀ)
-```
-
-Both count number of pivots.
-
----
-
-# 📌 27. When Is AᵀA Invertible?
-
-```
-AᵀA invertible ⇔ columns of A independent
-```
-
-Used heavily in machine learning (normal equations):
-
-```
-(AᵀA)x = Aᵀb
-```
+- \(\text{rank}(A) = \text{rank}(A^T)\)  
+- \(A^T A\) invertible ⇔ columns independent
 
 ---
 
 ## ✅ Topics Covered
 
-- [x] Function → transformation
-- [x] Linear transformations
-- [x] Matrix representation
-- [x] Composition
-- [x] Inverse matrices
-- [x] Determinants
-- [x] Kernels
-- [x] Row/column space
-- [x] Rank/Nullity
-- [x] Orthogonality
-- [x] AᵀA and ML usage
+- Functions → transformations  
+- Vector transformations  
+- Linear transformations: scaling, reflection, rotation  
+- Matrix representation, composition, sum, scalar multiple  
+- Image, pre-image, kernel  
+- Projections, unit vectors  
+- Solving \(Ax = b\), invertibility, one-to-one, onto  
+- Determinants, transpose  
+- Row space, column space, left null space, rank  
 
 ---
 
-> This file is part of my AI/ML learning journey — documenting foundational linear algebra concepts before advancing to calculus, vector calculus, and machine learning.
+> This file is part of my AI/ML learning journey — documenting linear algebra concepts before advancing to vector calculus and machine learning.
