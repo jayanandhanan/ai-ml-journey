@@ -152,16 +152,38 @@ $$
 
 ## 📌 10. Unit Vectors and Projections
 
-Projection of \(v\) onto \(u\):
+Unit vector:
 
 $$
-\text{proj}_u(v) = \frac{u \cdot v}{u \cdot u} \, u
+\hat{u} = \frac{u}{\|u\|}
 $$
 
-Matrix form:
+Projection of \(x\) onto line \(L\) in direction \(v\):
 
 $$
-P = \frac{u u^T}{u^T u}
+\text{proj}_v(x) = \frac{x \cdot v}{v \cdot v} \ v
+$$
+
+✅ **Geometric Interpretation (Shadow Meaning):**  
+Projection is the **shadow of vector x on the line L**.  
+It tells **how far along direction v you must go to reach the perpendicular drop from x**.
+
+✅ **Example:**
+
+$$
+x = (3,4), \quad v = (1,0)
+$$
+
+$$
+\text{proj}_v(x) = (3,0)
+$$
+
+---
+
+### Projection Matrix
+
+$$
+P = \frac{v v^T}{v^T v}
 $$
 
 ---
@@ -311,4 +333,5 @@ Properties:
 ---
 
 > This file is part of my AI/ML learning journey — documenting linear algebra concepts before advancing to vector calculus and machine learning.
+
 
